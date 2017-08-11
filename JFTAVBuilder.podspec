@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "jft0m" => "377632523@qq.com" }
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "git@github.com:bottotl/AVBuilder.git" }
+  s.source       = { :git => "https://github.com/bottotl/AVBuilder.git", :tag => "1.0.0" }
 
   s.source_files = "Classes/**/*.{h,m,c}"
   s.resources    = "Assets/**/*"
