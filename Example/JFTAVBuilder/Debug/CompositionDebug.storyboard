@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="APLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Orm-AN-m8j"/>
+                        <viewControllerLayoutGuide type="bottom" id="iop-Aa-rW6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ci-rG-4W9" userLabel="Player View" customClass="APLPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="w3O-nU-IbS">
+                                        <rect key="frame" x="0.0" y="423" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem style="plain" systemItem="play" id="tdC-tQ-N0S">
+                                                <connections>
+                                                    <action selector="togglePlayPause:" destination="BYZ-38-t0r" id="nAk-SQ-Jon"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="7XK-Re-dF5">
+                                                <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="ycx-pg-dKp">
+                                                    <rect key="frame" x="43" y="5" width="273" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="beginScrubbing:" destination="BYZ-38-t0r" eventType="touchDown" id="xvY-yO-36J"/>
+                                                        <action selector="endScrubbing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYe-nz-lrR"/>
+                                                        <action selector="endScrubbing:" destination="BYZ-38-t0r" eventType="touchCancel" id="yIA-zm-5Ou"/>
+                                                        <action selector="endScrubbing:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="zwd-8x-ac9"/>
+                                                        <action selector="scrub:" destination="BYZ-38-t0r" eventType="valueChanged" id="FmR-Bf-7Ip"/>
+                                                    </connections>
+                                                </slider>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-LA-ZKr">
+                                        <rect key="frame" x="323" y="434" width="52" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="b1b-J2-VeK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="r0D-LA-ZKr" firstAttribute="trailing" secondItem="w3O-nU-IbS" secondAttribute="trailing" id="5wa-vL-sTv"/>
+                                    <constraint firstAttribute="bottom" secondItem="r0D-LA-ZKr" secondAttribute="bottom" constant="12" id="8EU-Xm-Tup"/>
+                                    <constraint firstItem="w3O-nU-IbS" firstAttribute="bottom" secondItem="4ci-rG-4W9" secondAttribute="bottom" id="G0b-JR-qIn"/>
+                                    <constraint firstAttribute="trailing" secondItem="r0D-LA-ZKr" secondAttribute="trailing" id="Q3i-xX-zlF"/>
+                                    <constraint firstItem="w3O-nU-IbS" firstAttribute="leading" secondItem="4ci-rG-4W9" secondAttribute="leading" id="QNh-26-HyN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-xO-c3b" userLabel="Composition Debug View" customClass="APLCompositionDebugView">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Di6-xO-c3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AB9-gS-IaK"/>
+                            <constraint firstItem="4ci-rG-4W9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E7N-J3-DP2"/>
+                            <constraint firstItem="Di6-xO-c3b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="KSP-BX-vCP"/>
+                            <constraint firstItem="Di6-xO-c3b" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Oae-GG-1XK"/>
+                            <constraint firstItem="4ci-rG-4W9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="PCa-Gi-1Hp"/>
+                            <constraint firstItem="Di6-xO-c3b" firstAttribute="top" secondItem="4ci-rG-4W9" secondAttribute="bottom" id="Qhd-qZ-RvB"/>
+                            <constraint firstItem="4ci-rG-4W9" firstAttribute="top" secondItem="Orm-AN-m8j" secondAttribute="bottom" id="YrU-hL-z8a"/>
+                            <constraint firstAttribute="bottom" secondItem="4ci-rG-4W9" secondAttribute="bottom" constant="200" id="mv9-ps-xbX"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="compositionDebugView" destination="Di6-xO-c3b" id="lVe-FO-dwI"/>
+                        <outlet property="currentTimeLabel" destination="r0D-LA-ZKr" id="oV5-fn-7kc"/>
+                        <outlet property="playPauseButton" destination="tdC-tQ-N0S" id="DLE-FE-EtK"/>
+                        <outlet property="playerView" destination="4ci-rG-4W9" id="RZF-IE-RjI"/>
+                        <outlet property="scrubber" destination="ycx-pg-dKp" id="Iaq-P5-qLa"/>
+                        <outlet property="toolbar" destination="w3O-nU-IbS" id="62B-ut-88B"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

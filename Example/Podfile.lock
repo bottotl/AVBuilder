@@ -1,0 +1,16 @@
+PODS:
+  - JFTAVBuilder (1.0.0)
+
+DEPENDENCIES:
+  - JFTAVBuilder (from `../JFTAVBuilder.podspec`)
+
+EXTERNAL SOURCES:
+  JFTAVBuilder:
+    :path: "../JFTAVBuilder.podspec"
+
+SPEC CHECKSUMS:
+  JFTAVBuilder: 12453f642c26f2fdf88275bddde8cf7f526f3913
+
+PODFILE CHECKSUM: 0194e1ac3105e5bb4a366b5351336cf358718b17
+
+COCOAPODS: 1.2.1

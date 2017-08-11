@@ -1,0 +1,1 @@
+extern NSString * R_defaultLUT;
