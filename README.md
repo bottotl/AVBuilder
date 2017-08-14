@@ -24,7 +24,7 @@
     
 ### Use Builder
 
-++**Example:**++
+**Example:**
 
     UGCAVBuilder *builder = [UGCAVBuilder builderWithTimeLine:self.timeLine];
     builder.settings.preferredVideoSize = CGSizeMake(1280, 720);
@@ -72,7 +72,7 @@ ps:创建 animation layer 的方法在 UGCAVBuilder+Play 中
     [self.playerView.layer addSublayer:self.synLayer];
     [self.animationLayer setAffineTransform:[UGCAVBuilder scaleTransformMaker:CGRectMake(0, 0, self.videoComposition.renderSize.width, self.videoComposition.renderSize.height) andPlayerRect:self.playerView.frame]];
 
-++为什么要对 animation layer 进行缩放？++
+为什么要对 animation layer 进行缩放？
 
 1. 水印的大小应该是相对于视频的尺寸而言的。使用方在最开始调用的时候只知道“期望得到多大的视频”、“水印相对于视频的大小”
 2. 视频在播放的时候大小随时可能会改变
@@ -98,7 +98,7 @@ ps:创建 animation layer 的方法在 UGCAVBuilder+Play 中
      
 ---      
 ## How to use UGCAVAssetExportSession
-++**Example**:++
+**Example**:
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
