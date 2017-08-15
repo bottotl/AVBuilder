@@ -12,6 +12,7 @@
 		28FC63D31F42F12F006D88B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FC63D11F42F12F006D88B6 /* Main.storyboard */; };
 		28FC63D51F42F12F006D88B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FC63D41F42F12F006D88B6 /* Assets.xcassets */; };
 		28FC63D81F42F12F006D88B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FC63D61F42F12F006D88B6 /* LaunchScreen.storyboard */; };
+		28FC63E01F42F2E2006D88B6 /* JFTAVAssetExportSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC63DF1F42F2E2006D88B6 /* JFTAVAssetExportSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		28FC63D41F42F12F006D88B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28FC63D71F42F12F006D88B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28FC63D91F42F12F006D88B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FC63DF1F42F2E2006D88B6 /* JFTAVAssetExportSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFTAVAssetExportSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				28FC63CD1F42F12F006D88B6 /* AppDelegate.swift */,
 				28FC63CF1F42F12F006D88B6 /* ViewController.swift */,
+				28FC63DF1F42F2E2006D88B6 /* JFTAVAssetExportSession.swift */,
 				28FC63D11F42F12F006D88B6 /* Main.storyboard */,
 				28FC63D41F42F12F006D88B6 /* Assets.xcassets */,
 				28FC63D61F42F12F006D88B6 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				28FC63D01F42F12F006D88B6 /* ViewController.swift in Sources */,
 				28FC63CE1F42F12F006D88B6 /* AppDelegate.swift in Sources */,
+				28FC63E01F42F2E2006D88B6 /* JFTAVAssetExportSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				28FC63DE1F42F12F006D88B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

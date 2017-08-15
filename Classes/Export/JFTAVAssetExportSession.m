@@ -335,12 +335,8 @@ NSErrorDomain const JFTAVAssetExportErrorDomain = @"JFTAVAssetExportError";
         [self.writer cancelWriting];
         [self complete];
     } else if (self.error) {
-        [self.videoInput markAsFinished];
-        [self.audioInput markAsFinished];
         [self complete];
     }else {
-        [self.videoInput markAsFinished];
-        [self.audioInput markAsFinished];
         [self.writer finishWritingWithCompletionHandler:^{
             [self complete];
         }];
