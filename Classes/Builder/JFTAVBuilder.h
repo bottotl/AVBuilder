@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, JFTAVBuildStatus) {
 
  @param completionBlock composition 可能为空。可以通过 status 和 error 获取当前 builder 的状态和可能出现的错误
  */
-- (void)buildComposition:(void(^)(AVMutableComposition * _Nullable composition ))completionBlock;
+- (void)buildComposition:(void(^ __nullable)(AVMutableComposition * __nullable composition))completionBlock;
 
 #pragma mark - Export
 /// create video composition for export
