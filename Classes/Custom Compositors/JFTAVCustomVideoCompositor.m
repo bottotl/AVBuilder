@@ -13,6 +13,7 @@
 
 @interface JFTAVCustomVideoCompositor ()
 {
+    BOOL                                _isMemoryWaning;
     BOOL								_shouldCancelAllRequests;
     BOOL								_renderContextDidChange;
     dispatch_queue_t					_renderingQueue;
@@ -33,6 +34,7 @@
     self = [super init];
     if (self)
     {
+        _isMemoryWaning = NO;
         _renderingQueue = dispatch_queue_create("com.apple.aplcustomvideocompositor.renderingqueue", DISPATCH_QUEUE_SERIAL);
         _renderContextQueue = dispatch_queue_create("com.apple.aplcustomvideocompositor.rendercontextqueue", DISPATCH_QUEUE_SERIAL);
         _previousBuffer = nil;
@@ -40,15 +42,23 @@
 //        _rgbColorSpace = CGColorSpaceCreateDeviceRGB();
         EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
         _ciContext = [CIContext contextWithEAGLContext:eaglContext options:@{ kCIContextWorkingColorSpace : [NSNull null] } ];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMemoryWarningNotification) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     }
     return self;
 }
 
--(void)dealloc {
+- (void)dealloc {
     _renderingQueue = nil;
     _renderContextQueue = nil;
-//    [self deleteBuffers];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
+- (void)didReceiveMemoryWarningNotification {
+    _isMemoryWaning = YES;
+}
+
+
 //
 //- (void)deleteBuffers {
 //    if ( _rgbColorSpace ) {
@@ -56,6 +66,8 @@
 //        _rgbColorSpace = NULL;
 //    }
 //}
+
+
 
 - (NSDictionary *)sourcePixelBufferAttributes
 {
@@ -81,6 +93,10 @@
 {
     @autoreleasepool {
         dispatch_async(_renderingQueue,^() {
+            if (_isMemoryWaning) {
+                sleep(1);
+                _isMemoryWaning = NO;
+            }
             // Check if all pending requests have been cancelled
             if (_shouldCancelAllRequests) {
                 [request finishCancelledRequest];
@@ -149,7 +165,7 @@
         }
         
         [_ciContext render:sourceImage toCVPixelBuffer:pixelBuffer];
-        
+        sourceImage = nil;
         if (!pixelBuffer) {
             *errOut = [NSError errorWithDomain:@"finishPassthroughCompositionRequest error unknow"
                                                           code:1000
