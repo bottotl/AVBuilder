@@ -301,28 +301,28 @@
                                             CMTimeSubtract(maxTime, timeRange.start));
             }
         }
-        [[self.timeLine.music.asset tracksWithMediaType:AVMediaTypeAudio] enumerateObjectsUsingBlock:^(AVAssetTrack * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [[timeLine.music.asset tracksWithMediaType:AVMediaTypeAudio] enumerateObjectsUsingBlock:^(AVAssetTrack * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             AVMutableCompositionTrack *musicTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio
                                                                              preferredTrackID:kCMPersistentTrackID_Invalid];
             [musicTrack insertTimeRange:timeRange
                                 ofTrack:obj
                                  atTime:kCMTimeZero
                                   error:nil];
-            self.timeLine.music.timeRangeInTimeline = timeRange;
+            timeLine.music.timeRangeInTimeline = timeRange;
             [musicTracks addObject:musicTrack];
             AVMutableAudioMixInputParameters *musicParameters = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:musicTrack];
             [musicParameters setVolumeRampFromStartVolume:mixRate
                                               toEndVolume:mixRate
-                                                timeRange:self.timeLine.music.timeRange];
+                                                timeRange:timeLine.music.timeRange];
             [musicParametersArray addObject:musicParameters];
         }];
         [audioParametersA setVolumeRampFromStartVolume:(1-mixRate)
                                            toEndVolume:(1-mixRate)
-                                             timeRange:self.timeLine.music.timeRange];
+                                             timeRange:timeLine.music.timeRange];
         
         [audioParametersB setVolumeRampFromStartVolume:(1-mixRate)
                                            toEndVolume:(1-mixRate)
-                                             timeRange:self.timeLine.music.timeRange];
+                                             timeRange:timeLine.music.timeRange];
         
         [inputParametersArray addObjectsFromArray:musicParametersArray];
     }
