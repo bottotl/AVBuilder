@@ -282,16 +282,16 @@
     [audioParametersArray addObjectsFromArray:@[audioParametersA, audioParametersB]];
     [inputParametersArray addObjectsFromArray:audioParametersArray];
     
-    if (self.timeLine.music) {
+    if (timeLine.music) {
         NSMutableArray <AVMutableCompositionTrack *>        *musicTracks     = @[].mutableCopy;
         NSMutableArray <AVMutableAudioMixInputParameters *> *musicParametersArray = @[].mutableCopy;
         
-        CGFloat mixRate = self.timeLine.music.mixRate;
+        CGFloat mixRate = timeLine.music.mixRate;
         {/// fix mix rate
             mixRate = (mixRate > 1 ? 1 : mixRate);
             mixRate = (mixRate < 0 ? 0 : mixRate);
         }
-        CMTimeRange timeRange = self.timeLine.music.timeRange;
+        CMTimeRange timeRange = timeLine.music.timeRange;
         {/// fix music timeRange. 让音乐不超过视频
             CMTime endTime = CMTimeAdd(timeRange.start, timeRange.duration);
             if (CMTimeCompare(endTime, maxTime) == 1) {
