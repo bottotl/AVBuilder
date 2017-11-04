@@ -25,7 +25,7 @@ NSErrorDomain const JFTAVAssetExportErrorDomain = @"JFTAVAssetExportError";
 @property (nonatomic, strong) AVAssetWriterInput *videoInput;
 @property (nonatomic, strong) AVAssetWriterInput *audioInput;
 @property (nonatomic) dispatch_queue_t inputQueue;
-@property (nonatomic, copy) void (^completionHandler)();
+@property (nonatomic, copy) void (^completionHandler)(void);
 @property (nonatomic, strong) AVVideoComposition *videoCompositionInternal;
 
 @property (nonatomic, copy) void(^exportingTimeStampBlock)(CMTime);
