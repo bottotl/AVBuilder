@@ -50,9 +50,7 @@
 
 - (void)buildTimeline {
     [self reset];
-    [self buildComposition:^(AVMutableComposition *composition) {
-        self.composition = composition;
-    }];
+    [self buildComposition:nil];
 }
 
 - (void)reset {
