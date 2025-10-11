@@ -7,427 +7,417 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00AB06898A2D7C8AB0F49809937C54CA /* JFTAVBuilderSettings+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 237F132FED0EDC96774ADB3407CF15EA /* JFTAVBuilderSettings+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05A9CBD0376C6C9A338F7260D7E1E32C /* JFTAVBuilder+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B7E0A5EF6BD2510991C722E77CA711 /* JFTAVBuilder+Play.m */; };
-		15874D258907C615A37F7AC0B9AC38AF /* JFTAVTimelineItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 239AFA3D6ACEFA2568DC9C1F37EADD18 /* JFTAVTimelineItem+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16AABBB2A705457F85D72A088BBA5694 /* JFTAVTimeLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A740233BECD7A8F97AF6AA1FCBCB32 /* JFTAVTimeLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1797D43DB86A3EB87902C7BDF656F094 /* JFTAVMusicMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8052C1BFFA21BF6642C1DA52F17931 /* JFTAVMusicMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17E30AAEDFEFD36472D8416C402BE9AF /* JFTDissolveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4E9EE1D6045F9AD2527C40356758 /* JFTDissolveTransition.m */; };
-		1B90846422C16A7E26C018CD3F7FED43 /* JFTAVSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AD996B9314FE1F1C2C2B06915A63D /* JFTAVSizeHelper.m */; };
-		2F2DC8F22487B2FC0872DE7AD5E4C9BD /* R_JFTAVBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A3ED1D120A1858DC743ADD5AB23231 /* R_JFTAVBuilder.m */; };
-		3249BE063A2DD48C453C603433AE3156 /* R_JFTAVBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 513B75899E9DF2D29C497BA5A94B4452 /* R_JFTAVBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37AD77A5297357EA01C35DBE82524C17 /* JFTAVBuilder+Play.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B12A6F35F880F4D30E5398157EED736 /* JFTAVBuilder+Play.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38D47A8FE771BE678EC21354049968CE /* JFTAVAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 80029E431D01597478B6D2634075385A /* JFTAVAnimationMaker.m */; };
-		4DF68BF13672B7D82E38DA97D8B589F9 /* JFTDissolveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FD9D5CD1E078C08ED329F165FD9C1 /* JFTDissolveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		509A3806F7C0C9C43906262379D520AC /* JFTAVTimelineItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FD815589D1E597DC83B8007B2701A885 /* JFTAVTimelineItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51ACD0ACF0AA759B3DC6591D83DD565F /* JFTAVMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D384DBDC346F4A886C83ACDA9D7F46 /* JFTAVMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52A40A611D247DD389D7022E880C88A5 /* JFTAVAnimationMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = D8476C7A7A023C07DEAAC413AD9CE75F /* JFTAVAnimationMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CD851169982303355176CC10A106838 /* JFTAVMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FFF80D5C28B25A9B61DEC8A9E4F50 /* JFTAVMediaItem.m */; };
-		630EBC4BFB4AD31DD1F94A9B7E8D871F /* JFTAVMusicMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2478CC8C4BC1D9E4D28C4D022C4B91A /* JFTAVMusicMediaItem.m */; };
-		6407CF4D9006CF4086BB230663036362 /* JFTAVBuilderSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C83864816D11DA96B31B87335E27CA02 /* JFTAVBuilderSettings.m */; };
-		66CA83D34C216F1D24F141DC86FA38F6 /* CIFilter+ColorLUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4181F4065ABD562EF3E8CF71A3B8E3 /* CIFilter+ColorLUT.m */; };
-		6928805EC916C158420EBA24B570E3F4 /* JFTAVBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5CE1AD2596F64F91515E0D703375F4 /* JFTAVBuilder-dummy.m */; };
-		6CC33A4E7E8FADBA6CE5F99DB503C82D /* JFTAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B929CFCBCF28C99EAC31DAD281DD7C /* JFTAVEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76FABFC4A267233DF848CFE4FCE0A20A /* JFTAVBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5C90F2AA856E348213098F7A92B7B7 /* JFTAVBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B337B9867C397CBF3590B64BBD50FD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7EC187A466BD0C19E59200CA296B71F7 /* JFTAVCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = E34B1D8ECBEEBBE4497470CDB71F33C9 /* JFTAVCustomVideoCompositor.m */; };
-		84DBB38B91F4551DE72BD0E6A02B280E /* JFTAVTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FC36A0987B8CA90C7945A19A91EF45 /* JFTAVTimeLine.m */; };
-		8A8ECCBA03B7198C5648FB2E474C2405 /* CIFilter+ColorLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE2CAEB0970A3BABF72693AB9DC47D2 /* CIFilter+ColorLUT.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C14EBA87C596A1330C3546821135846 /* JFTAVSubtitlesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E328416A4F0978E318CAC0B5AE7FD3A3 /* JFTAVSubtitlesItem.m */; };
-		8CD53447D3D5C932D0AD9E049D651547 /* JFTAVAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = DB28746C0FAB6E3457C15BBFD9227EB3 /* JFTAVAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94D4D52481E390BE118E681902A5B6B3 /* JFTAVCustomVideoCompositor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A15CCE876363B29D4698D4848683AD2 /* JFTAVCustomVideoCompositor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9759C663BA847CF25E6CCEE8E5C28815 /* JFTAVBuilderSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D654354FB77D94B84C9706925368E7 /* JFTAVBuilderSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F38B0E199D1F79B810B6A7E9718F1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A1BF727712D79B3035E5FE18CCA4B4E7 /* JFTAVMediaItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E44ECCD82FB6A44F2EC062E83C4C84 /* JFTAVMediaItem+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8EC366B8F6F2C5C19697623A687D936 /* JFTAVCustomVideoCompositionInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F04B7E1C935A099BFC6E42B3B798A7 /* JFTAVCustomVideoCompositionInstruction.m */; };
-		AA0DCFF7D9EB808CA273A221B8B4E76E /* JFTAVVideoMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8B3F46104A202EFC1C233053900110 /* JFTAVVideoMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B07BE3875551CC33803D0BDFA893172A /* JFTAVSubtitlesItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 247410812A31E0809AC5CB6B1F19E1B1 /* JFTAVSubtitlesItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2DC99E6F9B89C5FEC0F8E442136A5FA /* JFTAVVideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D714EC043F69625DE74D4B6956C81 /* JFTAVVideoMediaItem.m */; };
-		B2F23C54DBEB71DEE522E6702CCCB58A /* JFTAVOverlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F615869643368A4BB0B43588FFC55072 /* JFTAVOverlayItem.m */; };
-		BF3E4C8D76AC0BD4BAD93D86A6A05BC5 /* JFTAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D2591C03ADA87984EB60E2C4171813 /* JFTAVAssetExportSession.m */; };
-		C6224D5A0181BABDE3D3DE7E62DD8DA9 /* JFTAVSizeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 80DE1403A32CC37C39F090A9CE484703 /* JFTAVSizeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC8E7E99C689FD6F5D7DB5269E3F7333 /* JFTAVBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B98FFB032A3B2E478A3DBF4CEE1A4F /* JFTAVBuilder.m */; };
-		D3C380B6C5F5F0D45F5E0FD2D61AA526 /* JFTAVTimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CC0BE095F342D27D52D3F2524C36AA /* JFTAVTimelineItem.m */; };
-		DDC95F318E8ACCA9D7857D30FC9D42BF /* JFTAVCustomVideoCompositionInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D33C75E368F782122A063C197DE59E9 /* JFTAVCustomVideoCompositionInstruction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E47C1132FFB0EA5C1081F25D433C9508 /* JFTAVOverlayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BC0D2CD2AA35479E31CF9E32541EE6 /* JFTAVOverlayItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFC44D59C96348D4E61BE749C8BC1EE3 /* Pods-JFTAVBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B589467262B7518F8A1AE7320934DA2C /* Pods-JFTAVBuilder-dummy.m */; };
+		0164C913B16AE8DEFE78AC3206732B58 /* JFTAVBuilderSettings+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4609AF759F8F6918F4D5745E6FE2AA24 /* JFTAVBuilderSettings+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01E9AE72F9ABACA39BD009E4C2D89D0F /* JFTAVTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2124BF7CFD8CE5C7930178E879EFB5 /* JFTAVTimeLine.m */; };
+		0C1D5600B10F241E35DCE60573F636D8 /* JFTAVOverlayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5009DD9D759740D15B4A511C90278C /* JFTAVOverlayItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E98A1E0EFB6569999B758AB1D1E2836 /* JFTAVAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E128496CF101BEAB2EB8FE3AEE6EBCB0 /* JFTAVAnimationMaker.m */; };
+		0FCEC01E4A7251B7073D83F85E985234 /* JFTAVMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE1E30C55D09141967B6A8E0C2A2127 /* JFTAVMediaItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12C6BCEF089C8E3B438CF9C8EB15CE5A /* JFTAVBuilder+Play.h in Headers */ = {isa = PBXBuildFile; fileRef = 84672A7250F8AEC8AA638427FB693407 /* JFTAVBuilder+Play.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B98BEA7A717017FEFD23600D516043A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E45C514180A970F38568AB9EC7393AEF /* Shaders.metal */; };
+		2004FC681293D6E527BB05B44E9770DE /* R_JFTAVBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E08AD6EF71F78C00B57F65C16D90F9D6 /* R_JFTAVBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		259FB174432CF8F52E5D480DA18D8702 /* JFTDissolveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D37F98C2D2819D2B37DFA4FE7DD096 /* JFTDissolveTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		271EA2A604F67F126A74E8B43A1BF3AE /* JFTAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F9A0FDF0A108A136006D340599FD91 /* JFTAVEditor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27650B3B7810AFE4FDB2732488472324 /* JFTAVCustomVideoCompositor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED815B005B498DFAEF3E1B262E224A7 /* JFTAVCustomVideoCompositor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		281D02DC9C0993CCF339845161722409 /* JFTAVTimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED9EFB722F4028E63B8A14C2DE5407 /* JFTAVTimelineItem.m */; };
+		2C0EE899A9DC44EFA533928196F0E2FA /* JFTAVOverlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AD2552B6F1231338308972F485F713 /* JFTAVOverlayItem.m */; };
+		2CB20AE6EA614EE84B0AAABEFF2BB126 /* JFTAVCustomVideoCompositionInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE070890FA4E321AF16C63D968D2DF9 /* JFTAVCustomVideoCompositionInstruction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		324789DFF2753573AF662A5714158C09 /* JFTAVBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F7AD85CF1D8D24DE0BFE23C89FB7A0 /* JFTAVBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BEF6407A86A2C9A3B13D7BFEC86F5EC /* JFTAVSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E016F37D3370D2168E613F84019E7A9 /* JFTAVSizeHelper.m */; };
+		3FC27454EFF4601A80BE0E635279780F /* CIFilter+ColorLUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 89632785CF79034249940ABDB9A91AAB /* CIFilter+ColorLUT.m */; };
+		40EA91CCE51E0EAAA344FD0A00F12DDC /* JFTAVBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D0429707EFB111AF434FE266AAD3 /* JFTAVBuilder-dummy.m */; };
+		44300C2CA4971F3A9CDF47E58696E31F /* JFTAVSubtitlesItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 689B797F275339A73E12C34023264A22 /* JFTAVSubtitlesItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57598B25411A826F36BB95A801F5FE77 /* JFTAVTimelineItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1870F63EAC48B574A3C25A382368EBA4 /* JFTAVTimelineItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57AE33EC7D30B9FB567E344415B17E39 /* JFTAVMediaItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDE8ECEE1A71C260B991F38F99A1B03 /* JFTAVMediaItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D75A512281F4F7AA4636CEB69C72015 /* JFTAVMetalFilterAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 876E2F96535EFFA6C2D07525DD72F929 /* JFTAVMetalFilterAdapter.m */; };
+		742FEEEDE573C4E220C2F495D29E759B /* JFTAVMetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870ADC1B111BAEC3885AF680DF71BDE /* JFTAVMetalRenderer.m */; };
+		7937BAA9D3E911624472A8BF6608BC48 /* JFTAVTimelineItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAE27993D4D0C5850D395A4DBBF88A7 /* JFTAVTimelineItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A8DB682BFC87A553F88831F0DD25650 /* JFTAVBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ADFD305A0ED6C8D2E1B0F5A5EE8CC6 /* JFTAVBuilder.m */; };
+		81B59EF2E56444F05CD345333E8E6F31 /* JFTDissolveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D6B89736AF3C4E79DF21F3C4E868F /* JFTDissolveTransition.m */; };
+		87ECA665F69ED7760823EF728CBA850E /* JFTAVSubtitlesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8553A379B314D8332FF956BFA956723D /* JFTAVSubtitlesItem.m */; };
+		89F0F2DBD38D3604D304E12E0D855158 /* JFTAVSizeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D674FE89FC76F12A10DA96A8BB623037 /* JFTAVSizeHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9050DC47262D8AC107B70D9B909C3894 /* Pods-JFTAVBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AD169E844D821E3D168A737E082255 /* Pods-JFTAVBuilder-dummy.m */; };
+		967375F9A5B7CD2D5104E91E3FD09B03 /* JFTAVCustomVideoCompositionInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136964E6B998A294DE6671FC5EDD5A9 /* JFTAVCustomVideoCompositionInstruction.m */; };
+		A0AAAC84432FD161E64DADA433DE425C /* JFTAVBuilderSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EED7D95F2B44D3BB408173C28BC6BE /* JFTAVBuilderSettings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6A1D7FF8718B29544016832C862AE2D /* R_JFTAVBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE813D7A25A7EC1D3CF9DB29C38CA63 /* R_JFTAVBuilder.m */; };
+		B89BC190D668007072CCEA86795AFD08 /* JFTAVMetalFilterAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C0E33776FEA4C29532C871F99AEEED /* JFTAVMetalFilterAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B93BC5A1467AFA43CC4A3651B186B15D /* JFTAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3594E98DF2572EB4B34943467D22FA27 /* JFTAVAssetExportSession.m */; };
+		B9C0227564774509A054C2E41E847E65 /* JFTAVMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C867E7FEE23CDC0F3D97595BC681500 /* JFTAVMediaItem.m */; };
+		C12BF17E46986C637887B8082D3DAF4F /* JFTAVMusicMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7B9B78321D008B60D099130AA944A0 /* JFTAVMusicMediaItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C41B4D199A1BFF46BCE9C4EB421F2229 /* JFTAVTimeLine.h in Headers */ = {isa = PBXBuildFile; fileRef = C94F6EFDAE7D2BC4EDEEF0056B8FC0EA /* JFTAVTimeLine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA32085F0C5A298A170A8098654E5C04 /* JFTAVBuilder+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = 827BE8A53B38D6BDDBC3E4B2EA23B16C /* JFTAVBuilder+Play.m */; };
+		CA6ABDBFC1EEC5F11E2AB30D2096362E /* JFTAVVideoMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C37375CF8FF57FF43E01C2C3892778 /* JFTAVVideoMediaItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1D17AC4ED4C8F18920735F62230BC26 /* JFTAVMetalRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F848CCEBD4035941521135B88D70939B /* JFTAVMetalRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D67DA24B02896E12675A39C12697E578 /* JFTAVAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E572D9853CE2C1DFDF6C87F9511B9B /* JFTAVAssetExportSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA12394CD6FF554EF2EE4F6BBED83923 /* CIFilter+ColorLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EB43B0F546B1CD1593B257C650DE81 /* CIFilter+ColorLUT.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DDE31C02FFAB806AEDCD7107029EE170 /* JFTAVCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B554B51C16C622298BED196B02C3F0C /* JFTAVCustomVideoCompositor.m */; };
+		E1B8CC8508F71128C25AB51B733081D8 /* JFTAVMusicMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4054162207B8F094C10E62C90291214B /* JFTAVMusicMediaItem.m */; };
+		EA7D1886ED0E7B407A494E704D0B9786 /* JFTAVVideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4CC7949EAC46E4D3B347998C94B2D8 /* JFTAVVideoMediaItem.m */; };
+		F2362C366D69D56BD4E379FB74C7A2E5 /* JFTAVBuilderSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC26DEEF39C002A0C00BE76C25C876 /* JFTAVBuilderSettings.m */; };
+		F34DCAFB16D0A5B1A428286F0127B08F /* JFTAVAnimationMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCFF0318918A101A08BB1629265C114 /* JFTAVAnimationMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F99F069721EC6C2C6902609F8CA4E781 /* PBXContainerItemProxy */ = {
+		09E6CD6E9E00329C4678F20A415AD886 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4BE031EDFC3D26AE4CF1D9D7B3057621;
+			remoteGlobalIDString = 46669325F5F64D7B1A49BF305AF235B1;
 			remoteInfo = JFTAVBuilder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FC36A0987B8CA90C7945A19A91EF45 /* JFTAVTimeLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVTimeLine.m; sourceTree = "<group>"; };
-		05B929CFCBCF28C99EAC31DAD281DD7C /* JFTAVEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVEditor.h; sourceTree = "<group>"; };
-		05C396DF2ED5347AA3696BF2CCA967CB /* Pods-JFTAVBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JFTAVBuilder.debug.xcconfig"; sourceTree = "<group>"; };
-		0E5C90F2AA856E348213098F7A92B7B7 /* JFTAVBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVBuilder.h; sourceTree = "<group>"; };
-		0E5CE1AD2596F64F91515E0D703375F4 /* JFTAVBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JFTAVBuilder-dummy.m"; sourceTree = "<group>"; };
-		14A3ED1D120A1858DC743ADD5AB23231 /* R_JFTAVBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = R_JFTAVBuilder.m; sourceTree = "<group>"; };
-		237F132FED0EDC96774ADB3407CF15EA /* JFTAVBuilderSettings+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilderSettings+Private.h"; sourceTree = "<group>"; };
-		239AFA3D6ACEFA2568DC9C1F37EADD18 /* JFTAVTimelineItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVTimelineItem+Private.h"; sourceTree = "<group>"; };
-		247410812A31E0809AC5CB6B1F19E1B1 /* JFTAVSubtitlesItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVSubtitlesItem.h; sourceTree = "<group>"; };
-		25D384DBDC346F4A886C83ACDA9D7F46 /* JFTAVMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMediaItem.h; sourceTree = "<group>"; };
-		2A8052C1BFFA21BF6642C1DA52F17931 /* JFTAVMusicMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMusicMediaItem.h; sourceTree = "<group>"; };
-		321AD996B9314FE1F1C2C2B06915A63D /* JFTAVSizeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVSizeHelper.m; sourceTree = "<group>"; };
-		34F04B7E1C935A099BFC6E42B3B798A7 /* JFTAVCustomVideoCompositionInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVCustomVideoCompositionInstruction.m; sourceTree = "<group>"; };
-		38B98FFB032A3B2E478A3DBF4CEE1A4F /* JFTAVBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVBuilder.m; sourceTree = "<group>"; };
-		3A15CCE876363B29D4698D4848683AD2 /* JFTAVCustomVideoCompositor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVCustomVideoCompositor.h; sourceTree = "<group>"; };
-		4A7D714EC043F69625DE74D4B6956C81 /* JFTAVVideoMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVVideoMediaItem.m; sourceTree = "<group>"; };
-		513B75899E9DF2D29C497BA5A94B4452 /* R_JFTAVBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = R_JFTAVBuilder.h; sourceTree = "<group>"; };
-		59BC0D2CD2AA35479E31CF9E32541EE6 /* JFTAVOverlayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVOverlayItem.h; sourceTree = "<group>"; };
-		5A2F9D08156BFCA9033536024A246CE1 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; path = Images; sourceTree = "<group>"; };
-		5B189F963EF22240AAB7E1ED704D2FB2 /* Pods-JFTAVBuilder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JFTAVBuilder-resources.sh"; sourceTree = "<group>"; };
-		5D33C75E368F782122A063C197DE59E9 /* JFTAVCustomVideoCompositionInstruction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVCustomVideoCompositionInstruction.h; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6B10CBE26AAAD1E6006EEB3256B632F6 /* libJFTAVBuilder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJFTAVBuilder.a; path = libJFTAVBuilder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D183991A750418F2478D8DDCB89FAD6 /* Pods-JFTAVBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JFTAVBuilder.release.xcconfig"; sourceTree = "<group>"; };
-		7A4181F4065ABD562EF3E8CF71A3B8E3 /* CIFilter+ColorLUT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+ColorLUT.m"; sourceTree = "<group>"; };
-		7B12A6F35F880F4D30E5398157EED736 /* JFTAVBuilder+Play.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilder+Play.h"; sourceTree = "<group>"; };
-		7C8FFF80D5C28B25A9B61DEC8A9E4F50 /* JFTAVMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMediaItem.m; sourceTree = "<group>"; };
-		80029E431D01597478B6D2634075385A /* JFTAVAnimationMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVAnimationMaker.m; sourceTree = "<group>"; };
-		80DE1403A32CC37C39F090A9CE484703 /* JFTAVSizeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVSizeHelper.h; sourceTree = "<group>"; };
-		8C4251E2EE907B2C96DC4FAA3279C6F9 /* Pods-JFTAVBuilder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JFTAVBuilder-acknowledgements.markdown"; sourceTree = "<group>"; };
-		90A740233BECD7A8F97AF6AA1FCBCB32 /* JFTAVTimeLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVTimeLine.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99B345B4C39E3B8DC2AA5A7BA726B0DC /* Pods-JFTAVBuilder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JFTAVBuilder-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A9A72BC38E35991A0B3AE51D3753954 /* Pods-JFTAVBuilder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JFTAVBuilder-frameworks.sh"; sourceTree = "<group>"; };
-		A0D9BFF7109F96E086A5B7208780881C /* JFTAVBuilder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JFTAVBuilder.xcconfig; sourceTree = "<group>"; };
-		A8B7E0A5EF6BD2510991C722E77CA711 /* JFTAVBuilder+Play.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JFTAVBuilder+Play.m"; sourceTree = "<group>"; };
-		AD8B3F46104A202EFC1C233053900110 /* JFTAVVideoMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVVideoMediaItem.h; sourceTree = "<group>"; };
-		B589467262B7518F8A1AE7320934DA2C /* Pods-JFTAVBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JFTAVBuilder-dummy.m"; sourceTree = "<group>"; };
-		BA3FD9D5CD1E078C08ED329F165FD9C1 /* JFTDissolveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTDissolveTransition.h; sourceTree = "<group>"; };
-		BBE2CAEB0970A3BABF72693AB9DC47D2 /* CIFilter+ColorLUT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CIFilter+ColorLUT.h"; sourceTree = "<group>"; };
-		C2478CC8C4BC1D9E4D28C4D022C4B91A /* JFTAVMusicMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMusicMediaItem.m; sourceTree = "<group>"; };
-		C3D654354FB77D94B84C9706925368E7 /* JFTAVBuilderSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVBuilderSettings.h; sourceTree = "<group>"; };
-		C82405052346642BAC0DEF14B4587EEE /* defaultLUT.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = defaultLUT.png; sourceTree = "<group>"; };
-		C83864816D11DA96B31B87335E27CA02 /* JFTAVBuilderSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVBuilderSettings.m; sourceTree = "<group>"; };
-		D0D2591C03ADA87984EB60E2C4171813 /* JFTAVAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVAssetExportSession.m; sourceTree = "<group>"; };
-		D475A86FA1F1DB28C3FAB6752E273A0E /* libPods-JFTAVBuilder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JFTAVBuilder.a"; path = "libPods-JFTAVBuilder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8476C7A7A023C07DEAAC413AD9CE75F /* JFTAVAnimationMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVAnimationMaker.h; sourceTree = "<group>"; };
-		DB28746C0FAB6E3457C15BBFD9227EB3 /* JFTAVAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVAssetExportSession.h; sourceTree = "<group>"; };
-		E328416A4F0978E318CAC0B5AE7FD3A3 /* JFTAVSubtitlesItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVSubtitlesItem.m; sourceTree = "<group>"; };
-		E34B1D8ECBEEBBE4497470CDB71F33C9 /* JFTAVCustomVideoCompositor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVCustomVideoCompositor.m; sourceTree = "<group>"; };
-		E5E44ECCD82FB6A44F2EC062E83C4C84 /* JFTAVMediaItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVMediaItem+Private.h"; sourceTree = "<group>"; };
-		E9FD4E9EE1D6045F9AD2527C40356758 /* JFTDissolveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTDissolveTransition.m; sourceTree = "<group>"; };
-		F0CC0BE095F342D27D52D3F2524C36AA /* JFTAVTimelineItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVTimelineItem.m; sourceTree = "<group>"; };
-		F5D3805FEBEA09FD271A8FFC32AB5203 /* JFTAVBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilder-prefix.pch"; sourceTree = "<group>"; };
-		F615869643368A4BB0B43588FFC55072 /* JFTAVOverlayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVOverlayItem.m; sourceTree = "<group>"; };
-		FD815589D1E597DC83B8007B2701A885 /* JFTAVTimelineItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVTimelineItem.h; sourceTree = "<group>"; };
+		02C0E33776FEA4C29532C871F99AEEED /* JFTAVMetalFilterAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMetalFilterAdapter.h; sourceTree = "<group>"; };
+		0B554B51C16C622298BED196B02C3F0C /* JFTAVCustomVideoCompositor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVCustomVideoCompositor.m; sourceTree = "<group>"; };
+		1870F63EAC48B574A3C25A382368EBA4 /* JFTAVTimelineItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVTimelineItem+Private.h"; sourceTree = "<group>"; };
+		1C999BF1EBE5C854E7D069E919C27047 /* Pods-JFTAVBuilder */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-JFTAVBuilder"; path = "libPods-JFTAVBuilder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E016F37D3370D2168E613F84019E7A9 /* JFTAVSizeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVSizeHelper.m; sourceTree = "<group>"; };
+		1EE813D7A25A7EC1D3CF9DB29C38CA63 /* R_JFTAVBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = R_JFTAVBuilder.m; sourceTree = "<group>"; };
+		220D6B89736AF3C4E79DF21F3C4E868F /* JFTDissolveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTDissolveTransition.m; sourceTree = "<group>"; };
+		25EB43B0F546B1CD1593B257C650DE81 /* CIFilter+ColorLUT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CIFilter+ColorLUT.h"; sourceTree = "<group>"; };
+		2EE070890FA4E321AF16C63D968D2DF9 /* JFTAVCustomVideoCompositionInstruction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVCustomVideoCompositionInstruction.h; sourceTree = "<group>"; };
+		3594E98DF2572EB4B34943467D22FA27 /* JFTAVAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVAssetExportSession.m; sourceTree = "<group>"; };
+		37170FE2CB85A6DDA5F5CE0893481727 /* Pods-JFTAVBuilder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JFTAVBuilder-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A2124BF7CFD8CE5C7930178E879EFB5 /* JFTAVTimeLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVTimeLine.m; sourceTree = "<group>"; };
+		3ED815B005B498DFAEF3E1B262E224A7 /* JFTAVCustomVideoCompositor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVCustomVideoCompositor.h; sourceTree = "<group>"; };
+		3F5009DD9D759740D15B4A511C90278C /* JFTAVOverlayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVOverlayItem.h; sourceTree = "<group>"; };
+		3F71F0288A93E97D61B7670EF2DB4490 /* defaultLUT.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = defaultLUT.png; sourceTree = "<group>"; };
+		4054162207B8F094C10E62C90291214B /* JFTAVMusicMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMusicMediaItem.m; sourceTree = "<group>"; };
+		407A544607FB2255F255DD7D7329819D /* JFTAVBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JFTAVBuilder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4609AF759F8F6918F4D5745E6FE2AA24 /* JFTAVBuilderSettings+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilderSettings+Private.h"; sourceTree = "<group>"; };
+		4C6846433C18CF6E6C3094BE96D3BB48 /* JFTAVBuilder */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = JFTAVBuilder; path = libJFTAVBuilder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C867E7FEE23CDC0F3D97595BC681500 /* JFTAVMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMediaItem.m; sourceTree = "<group>"; };
+		54B50C2275263622FA06A8FB6C43FAC0 /* Pods-JFTAVBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JFTAVBuilder.debug.xcconfig"; sourceTree = "<group>"; };
+		57AD169E844D821E3D168A737E082255 /* Pods-JFTAVBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JFTAVBuilder-dummy.m"; sourceTree = "<group>"; };
+		58D37F98C2D2819D2B37DFA4FE7DD096 /* JFTDissolveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTDissolveTransition.h; sourceTree = "<group>"; };
+		5BDE8ECEE1A71C260B991F38F99A1B03 /* JFTAVMediaItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVMediaItem+Private.h"; sourceTree = "<group>"; };
+		5CE1E30C55D09141967B6A8E0C2A2127 /* JFTAVMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMediaItem.h; sourceTree = "<group>"; };
+		689B797F275339A73E12C34023264A22 /* JFTAVSubtitlesItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVSubtitlesItem.h; sourceTree = "<group>"; };
+		6F9D57250B98FF2C6CFAC8A432CB5691 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		72C37375CF8FF57FF43E01C2C3892778 /* JFTAVVideoMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVVideoMediaItem.h; sourceTree = "<group>"; };
+		77932A7769C71E2C976B6172BFCD2D76 /* JFTAVBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JFTAVBuilder.debug.xcconfig; sourceTree = "<group>"; };
+		7FCFF0318918A101A08BB1629265C114 /* JFTAVAnimationMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVAnimationMaker.h; sourceTree = "<group>"; };
+		805A590E91C5F1A994D14B0006BE136F /* JFTAVBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JFTAVBuilder.release.xcconfig; sourceTree = "<group>"; };
+		8136964E6B998A294DE6671FC5EDD5A9 /* JFTAVCustomVideoCompositionInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVCustomVideoCompositionInstruction.m; sourceTree = "<group>"; };
+		827BE8A53B38D6BDDBC3E4B2EA23B16C /* JFTAVBuilder+Play.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JFTAVBuilder+Play.m"; sourceTree = "<group>"; };
+		84672A7250F8AEC8AA638427FB693407 /* JFTAVBuilder+Play.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilder+Play.h"; sourceTree = "<group>"; };
+		8553A379B314D8332FF956BFA956723D /* JFTAVSubtitlesItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVSubtitlesItem.m; sourceTree = "<group>"; };
+		876E2F96535EFFA6C2D07525DD72F929 /* JFTAVMetalFilterAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMetalFilterAdapter.m; sourceTree = "<group>"; };
+		8870ADC1B111BAEC3885AF680DF71BDE /* JFTAVMetalRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVMetalRenderer.m; sourceTree = "<group>"; };
+		89632785CF79034249940ABDB9A91AAB /* CIFilter+ColorLUT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+ColorLUT.m"; sourceTree = "<group>"; };
+		93E572D9853CE2C1DFDF6C87F9511B9B /* JFTAVAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVAssetExportSession.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A615FF58C8E4914EAEA55F68A3109193 /* Pods-JFTAVBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JFTAVBuilder.release.xcconfig"; sourceTree = "<group>"; };
+		AE4CC7949EAC46E4D3B347998C94B2D8 /* JFTAVVideoMediaItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVVideoMediaItem.m; sourceTree = "<group>"; };
+		B4ADFD305A0ED6C8D2E1B0F5A5EE8CC6 /* JFTAVBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVBuilder.m; sourceTree = "<group>"; };
+		B6168A7499391D4779A53E4CD3DE5CA6 /* Pods-JFTAVBuilder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JFTAVBuilder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6DC26DEEF39C002A0C00BE76C25C876 /* JFTAVBuilderSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVBuilderSettings.m; sourceTree = "<group>"; };
+		B8ED9EFB722F4028E63B8A14C2DE5407 /* JFTAVTimelineItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVTimelineItem.m; sourceTree = "<group>"; };
+		BEAE27993D4D0C5850D395A4DBBF88A7 /* JFTAVTimelineItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVTimelineItem.h; sourceTree = "<group>"; };
+		C4A238E0D9E92DF117C6F3474C2E5415 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = Assets/Images; sourceTree = "<group>"; };
+		C6AD2552B6F1231338308972F485F713 /* JFTAVOverlayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVOverlayItem.m; sourceTree = "<group>"; };
+		C94F6EFDAE7D2BC4EDEEF0056B8FC0EA /* JFTAVTimeLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVTimeLine.h; sourceTree = "<group>"; };
+		D5B1D0429707EFB111AF434FE266AAD3 /* JFTAVBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JFTAVBuilder-dummy.m"; sourceTree = "<group>"; };
+		D674FE89FC76F12A10DA96A8BB623037 /* JFTAVSizeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVSizeHelper.h; sourceTree = "<group>"; };
+		D749E40252F286487E45A3CBF6F69B56 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E08AD6EF71F78C00B57F65C16D90F9D6 /* R_JFTAVBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = R_JFTAVBuilder.h; sourceTree = "<group>"; };
+		E128496CF101BEAB2EB8FE3AEE6EBCB0 /* JFTAVAnimationMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFTAVAnimationMaker.m; sourceTree = "<group>"; };
+		E45C514180A970F38568AB9EC7393AEF /* Shaders.metal */ = {isa = PBXFileReference; includeInIndex = 1; path = Shaders.metal; sourceTree = "<group>"; };
+		E9F9A0FDF0A108A136006D340599FD91 /* JFTAVEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFTAVEditor.h; path = Classes/JFTAVEditor.h; sourceTree = "<group>"; };
+		ED1C1FC930931ADD966E7094B2C87B3F /* JFTAVBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JFTAVBuilder-prefix.pch"; sourceTree = "<group>"; };
+		EF61CC0297AF469C8E965F9811344FEB /* Pods-JFTAVBuilder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JFTAVBuilder-resources.sh"; sourceTree = "<group>"; };
+		F0EED7D95F2B44D3BB408173C28BC6BE /* JFTAVBuilderSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVBuilderSettings.h; sourceTree = "<group>"; };
+		F6F7AD85CF1D8D24DE0BFE23C89FB7A0 /* JFTAVBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVBuilder.h; sourceTree = "<group>"; };
+		F848CCEBD4035941521135B88D70939B /* JFTAVMetalRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMetalRenderer.h; sourceTree = "<group>"; };
+		FF7B9B78321D008B60D099130AA944A0 /* JFTAVMusicMediaItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JFTAVMusicMediaItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44ED09DFCAF88F69F8CA2C81FCE182B1 /* Frameworks */ = {
+		2F8AAC15007A353E5CBD976C5EAD2F17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F38B0E199D1F79B810B6A7E9718F1F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FECA7895E39C5155D826BA3916DDA3D2 /* Frameworks */ = {
+		41EDB7547AB6DAFABCF95BCE662EAD5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B337B9867C397CBF3590B64BBD50FD3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19093EB2E43C5E649B35EE4220E7D84A /* Export */ = {
+		01808DF7683EE444EEDD7DF4C0CF897A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DB28746C0FAB6E3457C15BBFD9227EB3 /* JFTAVAssetExportSession.h */,
-				D0D2591C03ADA87984EB60E2C4171813 /* JFTAVAssetExportSession.m */,
+				04FBE2D2129130B492D6DA76D1A118FF /* JFTAVBuilder */,
 			);
-			name = Export;
-			path = Export;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		1DF3ACE748D874AF6E9A070E9C5D3F8C /* Filter */ = {
+		01D4AA5F40786095DC10D0769A1FB30D /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				BA3FD9D5CD1E078C08ED329F165FD9C1 /* JFTDissolveTransition.h */,
-				E9FD4E9EE1D6045F9AD2527C40356758 /* JFTDissolveTransition.m */,
+				F6F7AD85CF1D8D24DE0BFE23C89FB7A0 /* JFTAVBuilder.h */,
+				B4ADFD305A0ED6C8D2E1B0F5A5EE8CC6 /* JFTAVBuilder.m */,
+				84672A7250F8AEC8AA638427FB693407 /* JFTAVBuilder+Play.h */,
+				827BE8A53B38D6BDDBC3E4B2EA23B16C /* JFTAVBuilder+Play.m */,
+				F0EED7D95F2B44D3BB408173C28BC6BE /* JFTAVBuilderSettings.h */,
+				B6DC26DEEF39C002A0C00BE76C25C876 /* JFTAVBuilderSettings.m */,
+				4609AF759F8F6918F4D5745E6FE2AA24 /* JFTAVBuilderSettings+Private.h */,
 			);
-			name = Filter;
-			path = Filter;
+			name = Builder;
+			path = Classes/Builder;
 			sourceTree = "<group>";
 		};
-		2ADA75DA77EE8DEC50C12503CDEFEC35 /* Utilities */ = {
+		04FBE2D2129130B492D6DA76D1A118FF /* JFTAVBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				BBE2CAEB0970A3BABF72693AB9DC47D2 /* CIFilter+ColorLUT.h */,
-				7A4181F4065ABD562EF3E8CF71A3B8E3 /* CIFilter+ColorLUT.m */,
-				D8476C7A7A023C07DEAAC413AD9CE75F /* JFTAVAnimationMaker.h */,
-				80029E431D01597478B6D2634075385A /* JFTAVAnimationMaker.m */,
-				80DE1403A32CC37C39F090A9CE484703 /* JFTAVSizeHelper.h */,
-				321AD996B9314FE1F1C2C2B06915A63D /* JFTAVSizeHelper.m */,
-			);
-			name = Utilities;
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		2EB986D11F8183EE618860DAE03B16FF /* Pods-JFTAVBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				8C4251E2EE907B2C96DC4FAA3279C6F9 /* Pods-JFTAVBuilder-acknowledgements.markdown */,
-				99B345B4C39E3B8DC2AA5A7BA726B0DC /* Pods-JFTAVBuilder-acknowledgements.plist */,
-				B589467262B7518F8A1AE7320934DA2C /* Pods-JFTAVBuilder-dummy.m */,
-				9A9A72BC38E35991A0B3AE51D3753954 /* Pods-JFTAVBuilder-frameworks.sh */,
-				5B189F963EF22240AAB7E1ED704D2FB2 /* Pods-JFTAVBuilder-resources.sh */,
-				05C396DF2ED5347AA3696BF2CCA967CB /* Pods-JFTAVBuilder.debug.xcconfig */,
-				6D183991A750418F2478D8DDCB89FAD6 /* Pods-JFTAVBuilder.release.xcconfig */,
-			);
-			name = "Pods-JFTAVBuilder";
-			path = "Target Support Files/Pods-JFTAVBuilder";
-			sourceTree = "<group>";
-		};
-		2F8D75BC0F1466FCA268DF123444A5E4 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				5A2F9D08156BFCA9033536024A246CE1 /* Images */,
-				57E72D791DC074809CB4D8A46507BBAA /* Images */,
-			);
-			name = Assets;
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		435284DE492C994C0FAA6FB1160E38DC /* TimeLine */ = {
-			isa = PBXGroup;
-			children = (
-				25D384DBDC346F4A886C83ACDA9D7F46 /* JFTAVMediaItem.h */,
-				7C8FFF80D5C28B25A9B61DEC8A9E4F50 /* JFTAVMediaItem.m */,
-				E5E44ECCD82FB6A44F2EC062E83C4C84 /* JFTAVMediaItem+Private.h */,
-				2A8052C1BFFA21BF6642C1DA52F17931 /* JFTAVMusicMediaItem.h */,
-				C2478CC8C4BC1D9E4D28C4D022C4B91A /* JFTAVMusicMediaItem.m */,
-				59BC0D2CD2AA35479E31CF9E32541EE6 /* JFTAVOverlayItem.h */,
-				F615869643368A4BB0B43588FFC55072 /* JFTAVOverlayItem.m */,
-				247410812A31E0809AC5CB6B1F19E1B1 /* JFTAVSubtitlesItem.h */,
-				E328416A4F0978E318CAC0B5AE7FD3A3 /* JFTAVSubtitlesItem.m */,
-				90A740233BECD7A8F97AF6AA1FCBCB32 /* JFTAVTimeLine.h */,
-				00FC36A0987B8CA90C7945A19A91EF45 /* JFTAVTimeLine.m */,
-				FD815589D1E597DC83B8007B2701A885 /* JFTAVTimelineItem.h */,
-				F0CC0BE095F342D27D52D3F2524C36AA /* JFTAVTimelineItem.m */,
-				239AFA3D6ACEFA2568DC9C1F37EADD18 /* JFTAVTimelineItem+Private.h */,
-				AD8B3F46104A202EFC1C233053900110 /* JFTAVVideoMediaItem.h */,
-				4A7D714EC043F69625DE74D4B6956C81 /* JFTAVVideoMediaItem.m */,
-			);
-			name = TimeLine;
-			path = TimeLine;
-			sourceTree = "<group>";
-		};
-		4417387EC39DE18139D21AA400C02AF6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				05B929CFCBCF28C99EAC31DAD281DD7C /* JFTAVEditor.h */,
-				EE3FB94339DB841C09E552076766FD89 /* Builder */,
-				44285DF540EDE97CF9C61D7E39FA1A77 /* Custom Compositors */,
-				19093EB2E43C5E649B35EE4220E7D84A /* Export */,
-				8A86B06D6F5E113FE99D9D7A79B7D224 /* R */,
-				435284DE492C994C0FAA6FB1160E38DC /* TimeLine */,
-				2ADA75DA77EE8DEC50C12503CDEFEC35 /* Utilities */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		44285DF540EDE97CF9C61D7E39FA1A77 /* Custom Compositors */ = {
-			isa = PBXGroup;
-			children = (
-				5D33C75E368F782122A063C197DE59E9 /* JFTAVCustomVideoCompositionInstruction.h */,
-				34F04B7E1C935A099BFC6E42B3B798A7 /* JFTAVCustomVideoCompositionInstruction.m */,
-				3A15CCE876363B29D4698D4848683AD2 /* JFTAVCustomVideoCompositor.h */,
-				E34B1D8ECBEEBBE4497470CDB71F33C9 /* JFTAVCustomVideoCompositor.m */,
-				1DF3ACE748D874AF6E9A070E9C5D3F8C /* Filter */,
-			);
-			name = "Custom Compositors";
-			path = "Custom Compositors";
-			sourceTree = "<group>";
-		};
-		56B60647DBDEE9DD7A355022004F02A9 /* JFTAVBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				4417387EC39DE18139D21AA400C02AF6 /* Classes */,
-				6416AE6D4DBE9B204E7E30113C2019DF /* Resources */,
-				79C7AA5A635FAB2FC1E348593C2A8923 /* Support Files */,
+				C4A238E0D9E92DF117C6F3474C2E5415 /* Images */,
+				E9F9A0FDF0A108A136006D340599FD91 /* JFTAVEditor.h */,
+				01D4AA5F40786095DC10D0769A1FB30D /* Builder */,
+				A094827CE1AA9CE235F5DB552A38CDEC /* Custom Compositors */,
+				5DC43BE7BD8AB9AFC9B82BA5F9AAC978 /* Export */,
+				E2963A81615AD8015B31D97700EC7498 /* Images */,
+				B1B64539924AE1D4BFDD47AF49CDA025 /* Pod */,
+				329F5072137DD83046640642D2E19AAB /* R */,
+				9CB0CFA318FAAA3A4AC82E2CD2D6B7F9 /* Support Files */,
+				BE950C2C3549F6A12BA3980F5D19345C /* TimeLine */,
+				AB3C6D2985C9DFF7A008B7DC0344E954 /* Utilities */,
 			);
 			name = JFTAVBuilder;
 			path = ../../..;
 			sourceTree = "<group>";
 		};
-		57E72D791DC074809CB4D8A46507BBAA /* Images */ = {
+		2F7E39263787A16B38A227B5C532ABD8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C82405052346642BAC0DEF14B4587EEE /* defaultLUT.png */,
+				83DA0F44362C1275978C38CCE8E61DD4 /* Pods-JFTAVBuilder */,
 			);
-			name = Images;
-			path = Images;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6416AE6D4DBE9B204E7E30113C2019DF /* Resources */ = {
+		329F5072137DD83046640642D2E19AAB /* R */ = {
 			isa = PBXGroup;
 			children = (
-				2F8D75BC0F1466FCA268DF123444A5E4 /* Assets */,
+				E08AD6EF71F78C00B57F65C16D90F9D6 /* R_JFTAVBuilder.h */,
+				1EE813D7A25A7EC1D3CF9DB29C38CA63 /* R_JFTAVBuilder.m */,
 			);
-			name = Resources;
+			name = R;
+			path = Classes/R;
 			sourceTree = "<group>";
 		};
-		79C7AA5A635FAB2FC1E348593C2A8923 /* Support Files */ = {
+		4659FD79A6EF766DDDE637D010D64793 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0D9BFF7109F96E086A5B7208780881C /* JFTAVBuilder.xcconfig */,
-				0E5CE1AD2596F64F91515E0D703375F4 /* JFTAVBuilder-dummy.m */,
-				F5D3805FEBEA09FD271A8FFC32AB5203 /* JFTAVBuilder-prefix.pch */,
+				4C6846433C18CF6E6C3094BE96D3BB48 /* JFTAVBuilder */,
+				1C999BF1EBE5C854E7D069E919C27047 /* Pods-JFTAVBuilder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53575465E2AAA3E53E768AB3DB6045A5 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				58D37F98C2D2819D2B37DFA4FE7DD096 /* JFTDissolveTransition.h */,
+				220D6B89736AF3C4E79DF21F3C4E868F /* JFTDissolveTransition.m */,
+			);
+			name = Filter;
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		5DC43BE7BD8AB9AFC9B82BA5F9AAC978 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				93E572D9853CE2C1DFDF6C87F9511B9B /* JFTAVAssetExportSession.h */,
+				3594E98DF2572EB4B34943467D22FA27 /* JFTAVAssetExportSession.m */,
+			);
+			name = Export;
+			path = Classes/Export;
+			sourceTree = "<group>";
+		};
+		83DA0F44362C1275978C38CCE8E61DD4 /* Pods-JFTAVBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B6168A7499391D4779A53E4CD3DE5CA6 /* Pods-JFTAVBuilder-acknowledgements.markdown */,
+				37170FE2CB85A6DDA5F5CE0893481727 /* Pods-JFTAVBuilder-acknowledgements.plist */,
+				57AD169E844D821E3D168A737E082255 /* Pods-JFTAVBuilder-dummy.m */,
+				EF61CC0297AF469C8E965F9811344FEB /* Pods-JFTAVBuilder-resources.sh */,
+				54B50C2275263622FA06A8FB6C43FAC0 /* Pods-JFTAVBuilder.debug.xcconfig */,
+				A615FF58C8E4914EAEA55F68A3109193 /* Pods-JFTAVBuilder.release.xcconfig */,
+			);
+			name = "Pods-JFTAVBuilder";
+			path = "Target Support Files/Pods-JFTAVBuilder";
+			sourceTree = "<group>";
+		};
+		9CB0CFA318FAAA3A4AC82E2CD2D6B7F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1D0429707EFB111AF434FE266AAD3 /* JFTAVBuilder-dummy.m */,
+				ED1C1FC930931ADD966E7094B2C87B3F /* JFTAVBuilder-prefix.pch */,
+				77932A7769C71E2C976B6172BFCD2D76 /* JFTAVBuilder.debug.xcconfig */,
+				805A590E91C5F1A994D14B0006BE136F /* JFTAVBuilder.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Objc/Pods/Target Support Files/JFTAVBuilder";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		A094827CE1AA9CE235F5DB552A38CDEC /* Custom Compositors */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9B56D98415407D74DE7AF4F13FC88725 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DCA8EA4C8C32DE378A00027208231FB5 /* Products */,
-				9D464DA1DCA24AB1F0E6195B4713C91A /* Targets Support Files */,
+				2EE070890FA4E321AF16C63D968D2DF9 /* JFTAVCustomVideoCompositionInstruction.h */,
+				8136964E6B998A294DE6671FC5EDD5A9 /* JFTAVCustomVideoCompositionInstruction.m */,
+				3ED815B005B498DFAEF3E1B262E224A7 /* JFTAVCustomVideoCompositor.h */,
+				0B554B51C16C622298BED196B02C3F0C /* JFTAVCustomVideoCompositor.m */,
+				53575465E2AAA3E53E768AB3DB6045A5 /* Filter */,
+				CB4580B03AB8B1639D67B44A7BD143D2 /* Metal */,
+			);
+			name = "Custom Compositors";
+			path = "Classes/Custom Compositors";
+			sourceTree = "<group>";
+		};
+		AB3C6D2985C9DFF7A008B7DC0344E954 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				25EB43B0F546B1CD1593B257C650DE81 /* CIFilter+ColorLUT.h */,
+				89632785CF79034249940ABDB9A91AAB /* CIFilter+ColorLUT.m */,
+				7FCFF0318918A101A08BB1629265C114 /* JFTAVAnimationMaker.h */,
+				E128496CF101BEAB2EB8FE3AEE6EBCB0 /* JFTAVAnimationMaker.m */,
+				D674FE89FC76F12A10DA96A8BB623037 /* JFTAVSizeHelper.h */,
+				1E016F37D3370D2168E613F84019E7A9 /* JFTAVSizeHelper.m */,
+			);
+			name = Utilities;
+			path = Classes/Utilities;
+			sourceTree = "<group>";
+		};
+		B1B64539924AE1D4BFDD47AF49CDA025 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				407A544607FB2255F255DD7D7329819D /* JFTAVBuilder.podspec */,
+				6F9D57250B98FF2C6CFAC8A432CB5691 /* LICENSE */,
+				D749E40252F286487E45A3CBF6F69B56 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BE950C2C3549F6A12BA3980F5D19345C /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				5CE1E30C55D09141967B6A8E0C2A2127 /* JFTAVMediaItem.h */,
+				4C867E7FEE23CDC0F3D97595BC681500 /* JFTAVMediaItem.m */,
+				5BDE8ECEE1A71C260B991F38F99A1B03 /* JFTAVMediaItem+Private.h */,
+				FF7B9B78321D008B60D099130AA944A0 /* JFTAVMusicMediaItem.h */,
+				4054162207B8F094C10E62C90291214B /* JFTAVMusicMediaItem.m */,
+				3F5009DD9D759740D15B4A511C90278C /* JFTAVOverlayItem.h */,
+				C6AD2552B6F1231338308972F485F713 /* JFTAVOverlayItem.m */,
+				689B797F275339A73E12C34023264A22 /* JFTAVSubtitlesItem.h */,
+				8553A379B314D8332FF956BFA956723D /* JFTAVSubtitlesItem.m */,
+				C94F6EFDAE7D2BC4EDEEF0056B8FC0EA /* JFTAVTimeLine.h */,
+				3A2124BF7CFD8CE5C7930178E879EFB5 /* JFTAVTimeLine.m */,
+				BEAE27993D4D0C5850D395A4DBBF88A7 /* JFTAVTimelineItem.h */,
+				B8ED9EFB722F4028E63B8A14C2DE5407 /* JFTAVTimelineItem.m */,
+				1870F63EAC48B574A3C25A382368EBA4 /* JFTAVTimelineItem+Private.h */,
+				72C37375CF8FF57FF43E01C2C3892778 /* JFTAVVideoMediaItem.h */,
+				AE4CC7949EAC46E4D3B347998C94B2D8 /* JFTAVVideoMediaItem.m */,
+			);
+			name = TimeLine;
+			path = Classes/TimeLine;
+			sourceTree = "<group>";
+		};
+		CB4580B03AB8B1639D67B44A7BD143D2 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				02C0E33776FEA4C29532C871F99AEEED /* JFTAVMetalFilterAdapter.h */,
+				876E2F96535EFFA6C2D07525DD72F929 /* JFTAVMetalFilterAdapter.m */,
+				F848CCEBD4035941521135B88D70939B /* JFTAVMetalRenderer.h */,
+				8870ADC1B111BAEC3885AF680DF71BDE /* JFTAVMetalRenderer.m */,
+				E45C514180A970F38568AB9EC7393AEF /* Shaders.metal */,
+			);
+			name = Metal;
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				01808DF7683EE444EEDD7DF4C0CF897A /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				4659FD79A6EF766DDDE637D010D64793 /* Products */,
+				2F7E39263787A16B38A227B5C532ABD8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A86B06D6F5E113FE99D9D7A79B7D224 /* R */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				513B75899E9DF2D29C497BA5A94B4452 /* R_JFTAVBuilder.h */,
-				14A3ED1D120A1858DC743ADD5AB23231 /* R_JFTAVBuilder.m */,
-			);
-			name = R;
-			path = R;
-			sourceTree = "<group>";
-		};
-		9B56D98415407D74DE7AF4F13FC88725 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				56B60647DBDEE9DD7A355022004F02A9 /* JFTAVBuilder */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9D464DA1DCA24AB1F0E6195B4713C91A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2EB986D11F8183EE618860DAE03B16FF /* Pods-JFTAVBuilder */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		E2963A81615AD8015B31D97700EC7498 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				3F71F0288A93E97D61B7670EF2DB4490 /* defaultLUT.png */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DCA8EA4C8C32DE378A00027208231FB5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6B10CBE26AAAD1E6006EEB3256B632F6 /* libJFTAVBuilder.a */,
-				D475A86FA1F1DB28C3FAB6752E273A0E /* libPods-JFTAVBuilder.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EE3FB94339DB841C09E552076766FD89 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0E5C90F2AA856E348213098F7A92B7B7 /* JFTAVBuilder.h */,
-				38B98FFB032A3B2E478A3DBF4CEE1A4F /* JFTAVBuilder.m */,
-				7B12A6F35F880F4D30E5398157EED736 /* JFTAVBuilder+Play.h */,
-				A8B7E0A5EF6BD2510991C722E77CA711 /* JFTAVBuilder+Play.m */,
-				C3D654354FB77D94B84C9706925368E7 /* JFTAVBuilderSettings.h */,
-				C83864816D11DA96B31B87335E27CA02 /* JFTAVBuilderSettings.m */,
-				237F132FED0EDC96774ADB3407CF15EA /* JFTAVBuilderSettings+Private.h */,
-			);
-			name = Builder;
-			path = Builder;
+			name = Images;
+			path = Assets/Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B3C459F76F5FDF886AAFCDFF03DA12A9 /* Headers */ = {
+		470156435DC98F1FC271A9AC129E78CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8ECCBA03B7198C5648FB2E474C2405 /* CIFilter+ColorLUT.h in Headers */,
-				52A40A611D247DD389D7022E880C88A5 /* JFTAVAnimationMaker.h in Headers */,
-				8CD53447D3D5C932D0AD9E049D651547 /* JFTAVAssetExportSession.h in Headers */,
-				37AD77A5297357EA01C35DBE82524C17 /* JFTAVBuilder+Play.h in Headers */,
-				76FABFC4A267233DF848CFE4FCE0A20A /* JFTAVBuilder.h in Headers */,
-				00AB06898A2D7C8AB0F49809937C54CA /* JFTAVBuilderSettings+Private.h in Headers */,
-				9759C663BA847CF25E6CCEE8E5C28815 /* JFTAVBuilderSettings.h in Headers */,
-				DDC95F318E8ACCA9D7857D30FC9D42BF /* JFTAVCustomVideoCompositionInstruction.h in Headers */,
-				94D4D52481E390BE118E681902A5B6B3 /* JFTAVCustomVideoCompositor.h in Headers */,
-				6CC33A4E7E8FADBA6CE5F99DB503C82D /* JFTAVEditor.h in Headers */,
-				A1BF727712D79B3035E5FE18CCA4B4E7 /* JFTAVMediaItem+Private.h in Headers */,
-				51ACD0ACF0AA759B3DC6591D83DD565F /* JFTAVMediaItem.h in Headers */,
-				1797D43DB86A3EB87902C7BDF656F094 /* JFTAVMusicMediaItem.h in Headers */,
-				E47C1132FFB0EA5C1081F25D433C9508 /* JFTAVOverlayItem.h in Headers */,
-				C6224D5A0181BABDE3D3DE7E62DD8DA9 /* JFTAVSizeHelper.h in Headers */,
-				B07BE3875551CC33803D0BDFA893172A /* JFTAVSubtitlesItem.h in Headers */,
-				16AABBB2A705457F85D72A088BBA5694 /* JFTAVTimeLine.h in Headers */,
-				15874D258907C615A37F7AC0B9AC38AF /* JFTAVTimelineItem+Private.h in Headers */,
-				509A3806F7C0C9C43906262379D520AC /* JFTAVTimelineItem.h in Headers */,
-				AA0DCFF7D9EB808CA273A221B8B4E76E /* JFTAVVideoMediaItem.h in Headers */,
-				4DF68BF13672B7D82E38DA97D8B589F9 /* JFTDissolveTransition.h in Headers */,
-				3249BE063A2DD48C453C603433AE3156 /* R_JFTAVBuilder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC41E9EFF0F2D4C68CF3FE1EDB02B9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA12394CD6FF554EF2EE4F6BBED83923 /* CIFilter+ColorLUT.h in Headers */,
+				F34DCAFB16D0A5B1A428286F0127B08F /* JFTAVAnimationMaker.h in Headers */,
+				D67DA24B02896E12675A39C12697E578 /* JFTAVAssetExportSession.h in Headers */,
+				324789DFF2753573AF662A5714158C09 /* JFTAVBuilder.h in Headers */,
+				12C6BCEF089C8E3B438CF9C8EB15CE5A /* JFTAVBuilder+Play.h in Headers */,
+				A0AAAC84432FD161E64DADA433DE425C /* JFTAVBuilderSettings.h in Headers */,
+				0164C913B16AE8DEFE78AC3206732B58 /* JFTAVBuilderSettings+Private.h in Headers */,
+				2CB20AE6EA614EE84B0AAABEFF2BB126 /* JFTAVCustomVideoCompositionInstruction.h in Headers */,
+				27650B3B7810AFE4FDB2732488472324 /* JFTAVCustomVideoCompositor.h in Headers */,
+				271EA2A604F67F126A74E8B43A1BF3AE /* JFTAVEditor.h in Headers */,
+				0FCEC01E4A7251B7073D83F85E985234 /* JFTAVMediaItem.h in Headers */,
+				57AE33EC7D30B9FB567E344415B17E39 /* JFTAVMediaItem+Private.h in Headers */,
+				B89BC190D668007072CCEA86795AFD08 /* JFTAVMetalFilterAdapter.h in Headers */,
+				D1D17AC4ED4C8F18920735F62230BC26 /* JFTAVMetalRenderer.h in Headers */,
+				C12BF17E46986C637887B8082D3DAF4F /* JFTAVMusicMediaItem.h in Headers */,
+				0C1D5600B10F241E35DCE60573F636D8 /* JFTAVOverlayItem.h in Headers */,
+				89F0F2DBD38D3604D304E12E0D855158 /* JFTAVSizeHelper.h in Headers */,
+				44300C2CA4971F3A9CDF47E58696E31F /* JFTAVSubtitlesItem.h in Headers */,
+				C41B4D199A1BFF46BCE9C4EB421F2229 /* JFTAVTimeLine.h in Headers */,
+				7937BAA9D3E911624472A8BF6608BC48 /* JFTAVTimelineItem.h in Headers */,
+				57598B25411A826F36BB95A801F5FE77 /* JFTAVTimelineItem+Private.h in Headers */,
+				CA6ABDBFC1EEC5F11E2AB30D2096362E /* JFTAVVideoMediaItem.h in Headers */,
+				259FB174432CF8F52E5D480DA18D8702 /* JFTDissolveTransition.h in Headers */,
+				2004FC681293D6E527BB05B44E9770DE /* R_JFTAVBuilder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2659BAD28CB78902A4A1ECE5F8E58E98 /* Pods-JFTAVBuilder */ = {
+		46669325F5F64D7B1A49BF305AF235B1 /* JFTAVBuilder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3EC59520510D51A5F8D4ACDAB7D19CE /* Build configuration list for PBXNativeTarget "Pods-JFTAVBuilder" */;
+			buildConfigurationList = 8D3C596CF955B52ED2D5C31783AD2BA0 /* Build configuration list for PBXNativeTarget "JFTAVBuilder" */;
 			buildPhases = (
-				942778E1505851D5886C92C1DD3B4157 /* Sources */,
-				44ED09DFCAF88F69F8CA2C81FCE182B1 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7FCEFD1FF4D497AD9638C3D33E83985E /* PBXTargetDependency */,
-			);
-			name = "Pods-JFTAVBuilder";
-			productName = "Pods-JFTAVBuilder";
-			productReference = D475A86FA1F1DB28C3FAB6752E273A0E /* libPods-JFTAVBuilder.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4BE031EDFC3D26AE4CF1D9D7B3057621 /* JFTAVBuilder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9BADB78E40162D3A14204357DF6E38A4 /* Build configuration list for PBXNativeTarget "JFTAVBuilder" */;
-			buildPhases = (
-				1F42180C627613C723B0A1D851DF262B /* Sources */,
-				FECA7895E39C5155D826BA3916DDA3D2 /* Frameworks */,
-				B3C459F76F5FDF886AAFCDFF03DA12A9 /* Headers */,
+				9FC41E9EFF0F2D4C68CF3FE1EDB02B9B /* Headers */,
+				42BCFBB5A580D14FF346463B5955538D /* Sources */,
+				41EDB7547AB6DAFABCF95BCE662EAD5E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,263 +425,323 @@
 			);
 			name = JFTAVBuilder;
 			productName = JFTAVBuilder;
-			productReference = 6B10CBE26AAAD1E6006EEB3256B632F6 /* libJFTAVBuilder.a */;
+			productReference = 4C6846433C18CF6E6C3094BE96D3BB48 /* JFTAVBuilder */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6595888841383070053E825CC6A5FED4 /* Pods-JFTAVBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C2112AF6FDAD8A54B11768BA1652ECE /* Build configuration list for PBXNativeTarget "Pods-JFTAVBuilder" */;
+			buildPhases = (
+				470156435DC98F1FC271A9AC129E78CD /* Headers */,
+				00B53104562FDB30D0E2DA4922419642 /* Sources */,
+				2F8AAC15007A353E5CBD976C5EAD2F17 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4548215C66BBB369D590825EE5654C7 /* PBXTargetDependency */,
+			);
+			name = "Pods-JFTAVBuilder";
+			productName = "Pods-JFTAVBuilder";
+			productReference = 1C999BF1EBE5C854E7D069E919C27047 /* Pods-JFTAVBuilder */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DCA8EA4C8C32DE378A00027208231FB5 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4659FD79A6EF766DDDE637D010D64793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BE031EDFC3D26AE4CF1D9D7B3057621 /* JFTAVBuilder */,
-				2659BAD28CB78902A4A1ECE5F8E58E98 /* Pods-JFTAVBuilder */,
+				46669325F5F64D7B1A49BF305AF235B1 /* JFTAVBuilder */,
+				6595888841383070053E825CC6A5FED4 /* Pods-JFTAVBuilder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F42180C627613C723B0A1D851DF262B /* Sources */ = {
+		00B53104562FDB30D0E2DA4922419642 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CA83D34C216F1D24F141DC86FA38F6 /* CIFilter+ColorLUT.m in Sources */,
-				38D47A8FE771BE678EC21354049968CE /* JFTAVAnimationMaker.m in Sources */,
-				BF3E4C8D76AC0BD4BAD93D86A6A05BC5 /* JFTAVAssetExportSession.m in Sources */,
-				05A9CBD0376C6C9A338F7260D7E1E32C /* JFTAVBuilder+Play.m in Sources */,
-				6928805EC916C158420EBA24B570E3F4 /* JFTAVBuilder-dummy.m in Sources */,
-				CC8E7E99C689FD6F5D7DB5269E3F7333 /* JFTAVBuilder.m in Sources */,
-				6407CF4D9006CF4086BB230663036362 /* JFTAVBuilderSettings.m in Sources */,
-				A8EC366B8F6F2C5C19697623A687D936 /* JFTAVCustomVideoCompositionInstruction.m in Sources */,
-				7EC187A466BD0C19E59200CA296B71F7 /* JFTAVCustomVideoCompositor.m in Sources */,
-				5CD851169982303355176CC10A106838 /* JFTAVMediaItem.m in Sources */,
-				630EBC4BFB4AD31DD1F94A9B7E8D871F /* JFTAVMusicMediaItem.m in Sources */,
-				B2F23C54DBEB71DEE522E6702CCCB58A /* JFTAVOverlayItem.m in Sources */,
-				1B90846422C16A7E26C018CD3F7FED43 /* JFTAVSizeHelper.m in Sources */,
-				8C14EBA87C596A1330C3546821135846 /* JFTAVSubtitlesItem.m in Sources */,
-				84DBB38B91F4551DE72BD0E6A02B280E /* JFTAVTimeLine.m in Sources */,
-				D3C380B6C5F5F0D45F5E0FD2D61AA526 /* JFTAVTimelineItem.m in Sources */,
-				B2DC99E6F9B89C5FEC0F8E442136A5FA /* JFTAVVideoMediaItem.m in Sources */,
-				17E30AAEDFEFD36472D8416C402BE9AF /* JFTDissolveTransition.m in Sources */,
-				2F2DC8F22487B2FC0872DE7AD5E4C9BD /* R_JFTAVBuilder.m in Sources */,
+				9050DC47262D8AC107B70D9B909C3894 /* Pods-JFTAVBuilder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		942778E1505851D5886C92C1DD3B4157 /* Sources */ = {
+		42BCFBB5A580D14FF346463B5955538D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC44D59C96348D4E61BE749C8BC1EE3 /* Pods-JFTAVBuilder-dummy.m in Sources */,
+				3FC27454EFF4601A80BE0E635279780F /* CIFilter+ColorLUT.m in Sources */,
+				0E98A1E0EFB6569999B758AB1D1E2836 /* JFTAVAnimationMaker.m in Sources */,
+				B93BC5A1467AFA43CC4A3651B186B15D /* JFTAVAssetExportSession.m in Sources */,
+				7A8DB682BFC87A553F88831F0DD25650 /* JFTAVBuilder.m in Sources */,
+				CA32085F0C5A298A170A8098654E5C04 /* JFTAVBuilder+Play.m in Sources */,
+				40EA91CCE51E0EAAA344FD0A00F12DDC /* JFTAVBuilder-dummy.m in Sources */,
+				F2362C366D69D56BD4E379FB74C7A2E5 /* JFTAVBuilderSettings.m in Sources */,
+				967375F9A5B7CD2D5104E91E3FD09B03 /* JFTAVCustomVideoCompositionInstruction.m in Sources */,
+				DDE31C02FFAB806AEDCD7107029EE170 /* JFTAVCustomVideoCompositor.m in Sources */,
+				B9C0227564774509A054C2E41E847E65 /* JFTAVMediaItem.m in Sources */,
+				5D75A512281F4F7AA4636CEB69C72015 /* JFTAVMetalFilterAdapter.m in Sources */,
+				742FEEEDE573C4E220C2F495D29E759B /* JFTAVMetalRenderer.m in Sources */,
+				E1B8CC8508F71128C25AB51B733081D8 /* JFTAVMusicMediaItem.m in Sources */,
+				2C0EE899A9DC44EFA533928196F0E2FA /* JFTAVOverlayItem.m in Sources */,
+				3BEF6407A86A2C9A3B13D7BFEC86F5EC /* JFTAVSizeHelper.m in Sources */,
+				87ECA665F69ED7760823EF728CBA850E /* JFTAVSubtitlesItem.m in Sources */,
+				01E9AE72F9ABACA39BD009E4C2D89D0F /* JFTAVTimeLine.m in Sources */,
+				281D02DC9C0993CCF339845161722409 /* JFTAVTimelineItem.m in Sources */,
+				EA7D1886ED0E7B407A494E704D0B9786 /* JFTAVVideoMediaItem.m in Sources */,
+				81B59EF2E56444F05CD345333E8E6F31 /* JFTDissolveTransition.m in Sources */,
+				B6A1D7FF8718B29544016832C862AE2D /* R_JFTAVBuilder.m in Sources */,
+				1B98BEA7A717017FEFD23600D516043A /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7FCEFD1FF4D497AD9638C3D33E83985E /* PBXTargetDependency */ = {
+		F4548215C66BBB369D590825EE5654C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JFTAVBuilder;
-			target = 4BE031EDFC3D26AE4CF1D9D7B3057621 /* JFTAVBuilder */;
-			targetProxy = F99F069721EC6C2C6902609F8CA4E781 /* PBXContainerItemProxy */;
+			target = 46669325F5F64D7B1A49BF305AF235B1 /* JFTAVBuilder */;
+			targetProxy = 09E6CD6E9E00329C4678F20A415AD886 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		27D97750F8A90433D69F2A0E0819FE43 /* Release */ = {
+		0AD7A3F9F63AF409534E47F08788949F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D9BFF7109F96E086A5B7208780881C /* JFTAVBuilder.xcconfig */;
+			baseConfigurationReference = 54B50C2275263622FA06A8FB6C43FAC0 /* Pods-JFTAVBuilder.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JFTAVBuilder/JFTAVBuilder-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DE353FE9B3FF0343A387F4B6C91F0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A615FF58C8E4914EAEA55F68A3109193 /* Pods-JFTAVBuilder.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+		4F9BB906DFA1AD34E4786B7136B08197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805A590E91C5F1A994D14B0006BE136F /* JFTAVBuilder.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JFTAVBuilder/JFTAVBuilder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JFTAVBuilder;
+				PRODUCT_NAME = JFTAVBuilder;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5A60F50A647F01DF54435AA10BCA0EB4 /* Debug */ = {
+		A987DF30A2271F8BE42961A3EA8FE441 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D9BFF7109F96E086A5B7208780881C /* JFTAVBuilder.xcconfig */;
+			baseConfigurationReference = 77932A7769C71E2C976B6172BFCD2D76 /* JFTAVBuilder.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JFTAVBuilder/JFTAVBuilder-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = JFTAVBuilder;
+				PRODUCT_NAME = JFTAVBuilder;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		673B75029A2315B65FC9C4F1C327DF67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05C396DF2ED5347AA3696BF2CCA967CB /* Pods-JFTAVBuilder.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A3664478E6EE794938BA1094F484BAEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D183991A750418F2478D8DDCB89FAD6 /* Pods-JFTAVBuilder.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -699,34 +749,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0C2112AF6FDAD8A54B11768BA1652ECE /* Build configuration list for PBXNativeTarget "Pods-JFTAVBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C104F7F091290C3D1E248192F07FE689 /* Debug */,
-				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+				0AD7A3F9F63AF409534E47F08788949F /* Debug */,
+				2DE353FE9B3FF0343A387F4B6C91F0BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BADB78E40162D3A14204357DF6E38A4 /* Build configuration list for PBXNativeTarget "JFTAVBuilder" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A60F50A647F01DF54435AA10BCA0EB4 /* Debug */,
-				27D97750F8A90433D69F2A0E0819FE43 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3EC59520510D51A5F8D4ACDAB7D19CE /* Build configuration list for PBXNativeTarget "Pods-JFTAVBuilder" */ = {
+		8D3C596CF955B52ED2D5C31783AD2BA0 /* Build configuration list for PBXNativeTarget "JFTAVBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				673B75029A2315B65FC9C4F1C327DF67 /* Debug */,
-				A3664478E6EE794938BA1094F484BAEC /* Release */,
+				A987DF30A2271F8BE42961A3EA8FE441 /* Debug */,
+				4F9BB906DFA1AD34E4786B7136B08197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

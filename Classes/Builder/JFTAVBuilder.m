@@ -412,7 +412,3 @@
 }
 
 @end
-
-@implementation JFTAVBuilderSettings
-
-@end

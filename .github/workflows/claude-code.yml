@@ -5,6 +5,10 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+  # Issue 打开时或添加标签时触发
+  issues:
+    types: [opened, labeled]
+
   # Issue 评论中使用 @claude 触发
   issue_comment:
     types: [created]
@@ -22,9 +26,11 @@ jobs:
   claude-assistant:
     # 只在以下情况运行:
     # 1. PR 事件
-    # 2. 评论中包含 @claude
+    # 2. Issue 带有 'claude-fix' 标签
+    # 3. 评论中包含 @claude
     if: |
       github.event_name == 'pull_request' ||
+      (github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'claude-fix')) ||
       (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude'))
 
@@ -33,7 +39,7 @@ jobs:
     timeout-minutes: 15
 
     permissions:
-      contents: read
+      contents: write  # 需要创建分支和提交代码
       pull-requests: write
       issues: write
       id-token: write  # 需要用于 OIDC token 获取

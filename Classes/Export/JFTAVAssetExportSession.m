@@ -275,49 +275,62 @@ NSErrorDomain const JFTAVAssetExportErrorDomain = @"JFTAVAssetExportError";
 }
 
 - (BOOL)requestMediaDataWithInput:(AVAssetWriterInput*)input output:(AVAssetReaderOutput *)output {
+    static NSUInteger frameCounter = 0;
+    const NSUInteger kFramesBeforeAutoreleasePoolDrain = 30; // Drain pool every 30 frames
+
     while ([input isReadyForMoreMediaData]) {
-        CMSampleBufferRef nextSampleBuffer = [output copyNextSampleBuffer];
-        if (nextSampleBuffer) {
-            
-            BOOL appendSuccess = [input appendSampleBuffer:nextSampleBuffer];
-            CMFormatDescriptionRef formatDesc = CMSampleBufferGetFormatDescription(nextSampleBuffer);
-            CMMediaType mediaType = CMFormatDescriptionGetMediaType(formatDesc);
-            if (mediaType == kCMMediaType_Video) {
-                if (self.exportingTimeStampBlock) {
-                    self.exportingTimeStampBlock(CMSampleBufferGetPresentationTimeStamp(nextSampleBuffer));
-                }
-            }
-            
-            CFRelease(nextSampleBuffer);
-            nextSampleBuffer = nil;
-            if (!appendSuccess) {
-                NSLog(@"append fail");
-                if (self.writer.status == AVAssetWriterStatusFailed) {
-                    if (self.writer.error.code == 28) {
-                        self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
-                                                         code:JFTAVAssetExportNoMoreSpaceErrorCode
-                                                     userInfo:self.writer.error.userInfo];
-                    } else {
-                        self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
-                                                         code:JFTAVAssetExportErrorUnknowCode
-                                                     userInfo:self.writer.error.userInfo];
+        @autoreleasepool {
+            CMSampleBufferRef nextSampleBuffer = [output copyNextSampleBuffer];
+            if (nextSampleBuffer) {
+
+                BOOL appendSuccess = [input appendSampleBuffer:nextSampleBuffer];
+                CMFormatDescriptionRef formatDesc = CMSampleBufferGetFormatDescription(nextSampleBuffer);
+                CMMediaType mediaType = CMFormatDescriptionGetMediaType(formatDesc);
+                if (mediaType == kCMMediaType_Video) {
+                    if (self.exportingTimeStampBlock) {
+                        self.exportingTimeStampBlock(CMSampleBufferGetPresentationTimeStamp(nextSampleBuffer));
                     }
+
+                    // Increment frame counter and drain autorelease pool periodically
+                    frameCounter++;
+                    if (frameCounter >= kFramesBeforeAutoreleasePoolDrain) {
+                        frameCounter = 0;
+                        // The inner @autoreleasepool will automatically drain here
+                    }
+                }
+
+                CFRelease(nextSampleBuffer);
+                nextSampleBuffer = nil;
+
+                if (!appendSuccess) {
                     NSLog(@"append fail");
+                    if (self.writer.status == AVAssetWriterStatusFailed) {
+                        if (self.writer.error.code == 28) {
+                            self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
+                                                             code:JFTAVAssetExportNoMoreSpaceErrorCode
+                                                         userInfo:self.writer.error.userInfo];
+                        } else {
+                            self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
+                                                             code:JFTAVAssetExportErrorUnknowCode
+                                                         userInfo:self.writer.error.userInfo];
+                        }
+                        NSLog(@"append fail");
+                    }
+                }
+            } else { //If sample buffer returns NULL, you should check the value of the associated AVAssetReader object's status property to determine why no more samples could be read.
+                NSLog(@"nextSampleBuffer not exit");
+                if (self.reader.status == AVAssetReaderStatusFailed) {
+                    self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
+                                                     code:JFTAVAssetExportErrorUnknowCode
+                                                 userInfo:self.reader.error.userInfo];
+                    return YES;
+                } else {// Assume that lack of a next sample buffer means the sample buffer source is out of samples and mark the input as finished
+                    NSLog(@"input:%@ markAsFinished", input.mediaType);
+                    [input markAsFinished];
+                    return YES;
                 }
             }
-        } else { //If sample buffer returns NULL, you should check the value of the associated AVAssetReader object’s status property to determine why no more samples could be read.
-            NSLog(@"nextSampleBuffer not exit");
-            if (self.reader.status == AVAssetReaderStatusFailed) {
-                self.error = [NSError errorWithDomain:JFTAVAssetExportErrorDomain
-                                                 code:JFTAVAssetExportErrorUnknowCode
-                                             userInfo:self.reader.error.userInfo];
-                return YES;
-            } else {// Assume that lack of a next sample buffer means the sample buffer source is out of samples and mark the input as finished
-                NSLog(@"input:%@ markAsFinished", input.mediaType);
-                [input markAsFinished];
-                return YES;
-            }
-        }
+        } // @autoreleasepool ends here, draining all autoreleased objects for this frame
     }
     return NO;
 }
