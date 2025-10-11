@@ -3,7 +3,8 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:github.com)",
-      "Bash(gh issue view:*)"
+      "Bash(gh issue view:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

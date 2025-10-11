@@ -49,13 +49,15 @@
         _useMetalRendering = (_metalRenderer != nil);
 
         if (_useMetalRendering) {
-            NSLog(@"[JFTAVCustomVideoCompositor] Using Metal rendering (optimized memory)");
+            NSLog(@"[JFTAVCustomVideoCompositor] Metal renderer initialized successfully");
         } else {
-            NSLog(@"[JFTAVCustomVideoCompositor] Metal not available, falling back to CIContext");
-            // Fallback to CIContext if Metal is not available
-            EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-            _ciContext = [CIContext contextWithEAGLContext:eaglContext options:@{ kCIContextWorkingColorSpace : [NSNull null] } ];
+            NSLog(@"[JFTAVCustomVideoCompositor] Metal initialization failed, using CIContext fallback");
         }
+
+        // Always initialize CIContext as fallback, even when Metal is available
+        // This ensures we can fallback gracefully if Metal rendering fails at runtime
+        EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        _ciContext = [CIContext contextWithEAGLContext:eaglContext options:@{ kCIContextWorkingColorSpace : [NSNull null] } ];
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMemoryWarningNotification) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     }
@@ -93,25 +95,18 @@
 
 - (NSDictionary *)sourcePixelBufferAttributes
 {
-    if (_useMetalRendering) {
-        // Metal prefers BGRA format for better performance
-        return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
-                  (NSString*)kCVPixelBufferMetalCompatibilityKey : [NSNumber numberWithBool:YES]};
-    } else {
-        return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange],
-                  (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
-    }
+    // Always use BGRA format for compatibility with both Metal and CIContext
+    // CIContext cannot write to YUV formats, so we must use BGRA
+    return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
+              (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
 }
 
 - (NSDictionary *)requiredPixelBufferAttributesForRenderContext
 {
-    if (_useMetalRendering) {
-        return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
-                  (NSString*)kCVPixelBufferMetalCompatibilityKey : [NSNumber numberWithBool:YES]};
-    } else {
-        return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange],
-                  (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
-    }
+    // Always use BGRA format for compatibility with both Metal and CIContext
+    // CIContext cannot write to YUV formats, so we must use BGRA
+    return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
+              (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
 }
 
 - (void)renderContextChanged:(AVVideoCompositionRenderContext *)newRenderContext
@@ -214,6 +209,19 @@
             CIFilter *filter = simpleLayerInstruction.videoItem.filter;
             CGAffineTransform transform = simpleLayerInstruction ? simpleLayerInstruction.transform : CGAffineTransformIdentity;
 
+            // Metal renderer doesn't support transforms yet, so fall back to CIContext if transform is not identity
+            // TODO: Implement transform support in Metal shaders
+            BOOL needsTransform = !CGAffineTransformIsIdentity(transform);
+
+            if (needsTransform) {
+                // Use CIContext for transforms (handles rotation correctly)
+                [self renderWithCIContext:sourcePixels
+                                  toBuffer:pixelBuffer
+                                    filter:filter
+                                 transform:transform];
+                return pixelBuffer;
+            }
+
             // Check if we can render this filter with Metal
             JFTAVMetalFilterType filterType = JFTAVMetalFilterTypePassthrough;
             NSDictionary *filterParams = nil;
@@ -222,7 +230,7 @@
                 [JFTAVMetalFilterAdapter convertFilter:filter toMetalFilterType:&filterType parameters:&filterParams];
             }
 
-            // Render with Metal
+            // Render with Metal (only when no transform needed)
             BOOL success = [_metalRenderer renderPixelBuffer:sourcePixels
                                          toDestinationBuffer:pixelBuffer
                                                   filterType:filterType
@@ -342,6 +350,20 @@
 
         // Use Metal rendering for transitions if available
         if (_useMetalRendering && _metalRenderer) {
+            // Metal renderer doesn't support transforms yet, so fall back to CIContext if any transform is not identity
+            BOOL needsTransform = !CGAffineTransformIsIdentity(foregroundTransform) || !CGAffineTransformIsIdentity(backgroundTransform);
+
+            if (needsTransform) {
+                // Use CIContext for transforms (handles rotation correctly)
+                [self renderTransitionWithCIContext:foregroundSourceBuffer
+                                         background:backgroundSourceBuffer
+                                       toDestination:dstPixels
+                                            progress:tweenFactor
+                                  foregroundLayerIns:forLayerIns
+                                  backgroundLayerIns:backLayerIns];
+                return dstPixels;
+            }
+
             BOOL success = [_metalRenderer renderTransitionWithForeground:foregroundSourceBuffer
                                                                background:backgroundSourceBuffer
                                                             toDestination:dstPixels

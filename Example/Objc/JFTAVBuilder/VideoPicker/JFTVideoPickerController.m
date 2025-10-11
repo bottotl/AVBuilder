@@ -14,6 +14,10 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) CGFloat cellWidth;
 @property (nonatomic, strong) NSArray <PHAsset *> *photoAssets;
+@property (nonatomic, strong) NSCache *imageCache;
+@property (nonatomic, strong) PHCachingImageManager *cachingImageManager;
+@property (nonatomic, strong) UIActivityIndicatorView *loadingIndicator;
+@property (nonatomic, strong) UILabel *emptyLabel;
 @end
 
 @implementation JFTVideoPickerController
@@ -25,6 +29,11 @@
         CGFloat width = [UIScreen mainScreen].bounds.size.width -( viewCount - 1 ) * 10 - 30;
         width = width / viewCount;
         _cellWidth = width;
+
+        // 初始化缓存
+        _imageCache = [[NSCache alloc] init];
+        _imageCache.countLimit = 50; // 缓存50张图片
+        _cachingImageManager = [[PHCachingImageManager alloc] init];
     }
     return self;
 }
@@ -95,14 +104,14 @@
     return self.photoAssets.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+
     JFTVideoPickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     PHAsset *asset = self.photoAssets[indexPath.row];
-    
+
     PHImageRequestOptions *options = [PHImageRequestOptions new];
     options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
-    
-    [[PHImageManager defaultManager] requestImageDataForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+
+    [[PHImageManager defaultManager] requestImageDataAndOrientationForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, CGImagePropertyOrientation orientation, NSDictionary * _Nullable info) {
         if (imageData) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 UIImage *image = [UIImage imageWithData:imageData];
@@ -112,7 +121,7 @@
             });
         }
     }];
-    
+
     return cell;
 }
 

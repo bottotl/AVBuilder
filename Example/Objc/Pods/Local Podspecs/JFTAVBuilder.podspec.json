@@ -20,6 +20,12 @@
   },
   "source_files": "Classes/**/*.{h,m,c,metal}",
   "resources": "Assets/**/*",
+  "resource_bundles": {
+    "JFTAVBuilderMetalShaders": "Assets/.metal_placeholder"
+  },
+  "pod_target_xcconfig": {
+    "METAL_LIBRARY_OUTPUT_DIR": "${TARGET_BUILD_DIR}/JFTAVBuilderMetalShaders.bundle/"
+  },
   "frameworks": [
     "Metal",
     "MetalKit",

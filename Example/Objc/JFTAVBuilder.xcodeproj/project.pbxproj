@@ -269,11 +269,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-JFTAVBuilder/Pods-JFTAVBuilder-resources.sh",
 				"${PODS_ROOT}/../../../Assets/Images/defaultLUT.png",
 				"${PODS_ROOT}/../../../Assets/Images",
+				"${PODS_CONFIGURATION_BUILD_DIR}/JFTAVBuilder/JFTAVBuilderMetalShaders.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/defaultLUT.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Images",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JFTAVBuilderMetalShaders.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,7 +419,7 @@
 				DEVELOPMENT_TEAM = 57HWCM983X;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = JFTAVBuilder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whu.JFTAVBuilder;
@@ -433,7 +435,7 @@
 				DEVELOPMENT_TEAM = 57HWCM983X;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = JFTAVBuilder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whu.JFTAVBuilder;

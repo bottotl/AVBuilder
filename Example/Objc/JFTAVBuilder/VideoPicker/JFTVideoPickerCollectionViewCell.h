@@ -13,4 +13,8 @@
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, copy)   NSString   *durationText;
 
+- (void)showLoadingIndicator;
+- (void)hideLoadingIndicator;
+- (void)prepareForReuse;
+
 @end

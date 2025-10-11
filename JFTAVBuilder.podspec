@@ -19,6 +19,12 @@ Pod::Spec.new do |s|
   s.source_files = "Classes/**/*.{h,m,c,metal}"
   s.resources    = "Assets/**/*"
 
+  # Configure Metal shader compilation and bundling
+  s.resource_bundle = { 'JFTAVBuilderMetalShaders' => 'Assets/.metal_placeholder' }
+  s.pod_target_xcconfig = {
+    'METAL_LIBRARY_OUTPUT_DIR' => '${TARGET_BUILD_DIR}/JFTAVBuilderMetalShaders.bundle/'
+  }
+
   # Framework dependencies
   s.frameworks = 'Metal', 'MetalKit', 'AVFoundation', 'CoreImage', 'CoreVideo'
 

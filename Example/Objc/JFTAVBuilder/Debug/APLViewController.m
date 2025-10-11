@@ -321,13 +321,15 @@ static NSString* const AVCDVPlayerViewControllerRateObservationContext = @"AVCDV
 {
 	dispatch_async(dispatch_get_main_queue(), ^{
 		if (error) {
-			UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[error localizedDescription]
-																message:[error localizedRecoverySuggestion]
-															   delegate:nil
-													  cancelButtonTitle:NSLocalizedString(@"OK", nil)
-													  otherButtonTitles:nil];
-			
-			[alertView show];
+			UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[error localizedDescription]
+																					 message:[error localizedRecoverySuggestion]
+																			  preferredStyle:UIAlertControllerStyleAlert];
+			UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil)
+																style:UIAlertActionStyleDefault
+															  handler:nil];
+			[alertController addAction:okAction];
+
+			[self presentViewController:alertController animated:YES completion:nil];
 		}
 	});
 }

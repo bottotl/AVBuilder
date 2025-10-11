@@ -26,6 +26,9 @@
 
     // Current command buffer
     id<MTLCommandBuffer> _currentCommandBuffer;
+
+    // Metal availability flag
+    BOOL _metalAvailable;
 }
 @end
 
@@ -63,7 +66,15 @@ typedef struct {
         [self setupVertexBuffer];
 
         // Load shaders and create pipeline states
+        _metalAvailable = YES;
         [self setupPipelines];
+
+        // Check if Metal setup succeeded
+        if (!_passthroughPipeline) {
+            NSLog(@"[JFTAVMetalRenderer] Metal pipeline setup failed, this renderer will not be usable");
+            _metalAvailable = NO;
+            return nil;
+        }
     }
     return self;
 }
@@ -100,11 +111,24 @@ typedef struct {
     // Load Metal library
     id<MTLLibrary> library = [_device newDefaultLibrary];
     if (!library) {
-        // Try to find the library in the bundle
-        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-        NSString *libraryPath = [bundle pathForResource:@"default" ofType:@"metallib"];
-        if (libraryPath) {
-            library = [_device newLibraryWithFile:libraryPath error:&error];
+        // Try to find the library in the CocoaPods resource bundle
+        NSBundle *classBundle = [NSBundle bundleForClass:[self class]];
+        NSURL *bundleURL = [[classBundle resourceURL] URLByAppendingPathComponent:@"JFTAVBuilderMetalShaders.bundle"];
+        NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
+
+        if (resourceBundle) {
+            NSURL *libraryURL = [resourceBundle URLForResource:@"default" withExtension:@"metallib"];
+            if (libraryURL) {
+                library = [_device newLibraryWithURL:libraryURL error:&error];
+            }
+        }
+
+        // Fallback: try to find in the class bundle directly (for development/testing)
+        if (!library) {
+            NSString *libraryPath = [classBundle pathForResource:@"default" ofType:@"metallib"];
+            if (libraryPath) {
+                library = [_device newLibraryWithFile:libraryPath error:&error];
+            }
         }
     }
 
@@ -155,8 +179,9 @@ typedef struct {
 }
 
 - (void)setupFallbackPipelines {
-    // Use CIContext as fallback when Metal shaders are not available
-    NSLog(@"[JFTAVMetalRenderer] Using CIContext fallback mode");
+    // Mark Metal as unavailable when shaders cannot be loaded
+    _metalAvailable = NO;
+    NSLog(@"[JFTAVMetalRenderer] Metal shaders not available, marking renderer as unavailable");
 }
 
 - (id<MTLTexture>)createTextureFromPixelBuffer:(CVPixelBufferRef)pixelBuffer
@@ -307,12 +332,15 @@ typedef struct {
 
         id<MTLRenderCommandEncoder> renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:renderPassDescriptor];
 
-        if (!_dissolvePipeline) {
-            // Fallback to simple blend if dissolve pipeline not available
-            _dissolvePipeline = _passthroughPipeline;
+        // Check if we have a valid pipeline for dissolve transition
+        id<MTLRenderPipelineState> pipelineToUse = _dissolvePipeline ?: _passthroughPipeline;
+        if (!pipelineToUse) {
+            NSLog(@"[JFTAVMetalRenderer] No valid pipeline available for transition");
+            [renderEncoder endEncoding];
+            return NO;
         }
 
-        [renderEncoder setRenderPipelineState:_dissolvePipeline];
+        [renderEncoder setRenderPipelineState:pipelineToUse];
         [renderEncoder setVertexBuffer:_vertexBuffer offset:0 atIndex:0];
         [renderEncoder setFragmentTexture:foregroundTexture atIndex:0];
         [renderEncoder setFragmentTexture:backgroundTexture atIndex:1];

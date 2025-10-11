@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PhotosUI/PhotosUI.h>
 
-@interface JFTAVEditorViewController : UIViewController
+API_AVAILABLE(ios(14))
+@interface JFTAVEditorViewController : UIViewController <PHPickerViewControllerDelegate>
 
 @end

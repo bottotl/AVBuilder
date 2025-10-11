@@ -99,10 +99,12 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../../Assets/Images/defaultLUT.png"
   install_resource "${PODS_ROOT}/../../../Assets/Images"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/JFTAVBuilder/JFTAVBuilderMetalShaders.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../../Assets/Images/defaultLUT.png"
   install_resource "${PODS_ROOT}/../../../Assets/Images"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/JFTAVBuilder/JFTAVBuilderMetalShaders.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
