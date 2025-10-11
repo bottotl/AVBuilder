@@ -1,0 +1,51 @@
+name: Claude Code Assistant
+
+on:
+  # PR 创建和更新时自动审查
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+  # Issue 评论中使用 @claude 触发
+  issue_comment:
+    types: [created]
+
+  # PR 评论中使用 @claude 触发
+  pull_request_review_comment:
+    types: [created]
+
+# 限制并发,避免重复运行
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.event.issue.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  claude-assistant:
+    # 只在以下情况运行:
+    # 1. PR 事件
+    # 2. 评论中包含 @claude
+    if: |
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude'))
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 15
+
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write  # 需要用于 OIDC token 获取
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史用于代码分析
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@beta
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
